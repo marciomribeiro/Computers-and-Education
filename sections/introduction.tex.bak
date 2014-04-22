@@ -4,7 +4,7 @@
 
 	\item Context: learning during programming courses
 	
-	\item Problem: \textit{early} identification of potential failing students
+	\item Problem: \textit{early} identification of potential dropout students
 	
 	\item Solution: exercises system, metrics measurement, and clustering algorithms.
 	
@@ -12,4 +12,4 @@
 	
 	\item Contributions: approach/strategy?
 
-\end{itemize} 
+\end{itemize}

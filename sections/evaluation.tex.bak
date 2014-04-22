@@ -6,7 +6,7 @@ To evaluate our strategy, in this section we present the empirical study we cond
 
 \subsection{Objective and Hypotheses}
 
-The objective of this study is to evaluate to what extent our strategy \todo{dar um nome para a strategy?} is capable of identifying potential failing students. This way, based on this objective, our hypotheses are the following:
+The objective of this study is to evaluate to what extent our strategy \todo{dar um nome para a strategy?} is capable of identifying potential dropout students. This way, based on this objective, our hypotheses are the following:
 
 \begin{enumerate}[RH1]
 
@@ -20,7 +20,7 @@ The objective of this study is to evaluate to what extent our strategy \todo{dar
 
 \subsection{Material}
 
-The material of this study consists of almost 300 programming exercises in Huxley.
+The material of this study consists of almost 300 programming exercises in Huxley. 
 
 \subsection{Participants}
 
@@ -67,8 +67,8 @@ In this section, we describe the results and test our hypotheses before discussi
 \begin{itemize}
 
 	\item Olhar se, para os alunos onde o algoritmo errou, eles foram pra prova final.
-	\item Olhar se, para os alunos onde o algoritmo acertou, quantos deles falharam.
+	\item Olhar se, para os alunos onde o algoritmo acertou, quantos deles foram drop out.
 
 \end{itemize}
 
-\subsection{Threats to validity} 
+\subsection{Threats to validity}

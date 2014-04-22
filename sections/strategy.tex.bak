@@ -2,26 +2,11 @@
 
 \label{sec:strategy}
 
-This way, the problem we address in this paper consists of a strategy to \textit{early} identify potential failing students. Notice that identifying early is very important in the sense that professors still have enough time to act and avoid students to fail the course. This way, we focus exclusively on early identifying these students. Providing or reporting a technique useful to reduce the failure rate is outside the scope of this paper. Nevertheless, notice that when identifying them we may study the data and afterwards provide a technique to do so. Actually, based on the results of this paper, we intend to propose a technique to reduce the failure rate as future work.
+This way, the problem we address in this paper consists of a strategy to \textit{early} identify potential drop out students. Notice that identifying early is very important in the sense that professors still have enough time to act and avoid students to fail the course. This way, we focus exclusively on early identifying these students. Providing or reporting a technique useful to reduce the dropout rate is outside the scope of this paper. Nevertheless, notice that when identifying them we may study the data and afterwards provide a technique to do so. Actually, based on the results of this paper, we intend to propose a technique to reduce the drop out rate as future work.
 
 Next, we detail our strategy to identify these students.
 
 \subsection{Online exercises system}
-% This section should answer: Why is this kind of system important to identify potential falling students?
-% Answer: We need metrics. In order to discover how students are performing, it is necessary a close monitoring of students behaviour
-% Talk about Huxley, only enough to explain the metrics: submissions and submission_status (Correct ...)
-
-As a side effect, we believe that this kind of system will be useful to improve the overall performance of students:
-% #1 Students only learn how to program programming, a lot ... 
-% #2 Students need rapid feedback
-% #3 Students learn at different speed
-% #4 There always be great students and bad students, then the great should be presented to challenges that make them even greater and the bad ones should be presented to a different set of problems that allow them to become better
-
-
-% The Huxley is an online exercise system that has features that provides all these needs (then, it will justify our choice )
-
-
-
 
 To evaluate the students performance during the course, we use an online exercises system named Huxley~\cite{}. \todo{algum texto ja pronto?}
 
@@ -52,7 +37,7 @@ Depending on the level of difficulty of a problem, students may submit several t
 
 \subsection{Clustering algorithm}
 
-To identify potential failing students, we use the well-known clustering algorithm k-means~\cite{}. As input, we set the algorithm to compute three groups. To compute the groups, the algorithm takes into account the metrics we present in Section~\ref{sec:metrics}.
+To identify potential dropout students, we use the well-known clustering algorithm k-means~\cite{}. As input, we set the algorithm to compute three groups. To compute the groups, the algorithm takes into account the metrics we present in Section~\ref{sec:metrics}.
 
 We choose three groups because ???
 
@@ -67,13 +52,13 @@ Figure~\ref{fig:strategy} combines all steps of our strategy. As the classes are
 \begin{figure}[htb]
 \centering
 \includegraphics[width=1.0\textwidth,natwidth=610,natheight=642]{images/Strategy.pdf}
-\caption{Summary of our strategy to identify potential failing students.}
+\caption{Summary of our strategy to identify potential dropout students.}
 \label{fig:strategy}
 \end{figure}
 
-Now, according to the groups, we have the potential failing students, the ones that have a small number of submissions and correct submissions (represented by circles). Notice we also have students that are potential candidates to successfully pass (represented by stars): after 30 days, they seem to be studying hard, due to the high number of submissions.
+Now, according to the groups, we have the potential dropout students, the ones that have a small number of submissions and correct submissions (represented by circles). Notice we also have students that are potential candidates to successfully pass (represented by stars): after 30 days, they seem to be studying hard, due to the high number of submissions.
 
-After applying the clustering algorithm, we need to check if the algorithm correctly predicted the failing students. To do so, we use the academic system of the Federal University of Alagoas to look for grades and check whether the students passed or not. For example, for the detached star, the algorithm pointed it right: after 30 days, it identified the student would pass and she did. The same happened for the detached circles: after 30 days, the algorithm pointed that both students would not pass and they did not. Nevertheless, notice that our strategy is susceptible to false positives (the algorithm pointed the student would pass, but she did not) and false negatives (the algorithm pointed the student would not pass, but she did). We shall consider and discuss these cases in Section~\ref{}.
+After applying the clustering algorithm, we need to check if the algorithm correctly predicted the dropout students. To do so, we use the academic system of the Federal University of Alagoas to look for grades and check whether the students passed or not. For example, for the detached star, the algorithm pointed it right: after 30 days, it identified the student would pass and she did. The same happened for the detached circles: after 30 days, the algorithm pointed that both students would not pass and they did not. Nevertheless, notice that our strategy is susceptible to false positives (the algorithm pointed the student would pass, but she did not) and false negatives (the algorithm pointed the student would not pass, but she did). We shall consider and discuss these cases in Section~\ref{}.
 
 After confronting the algorithm results with the academic system, we perform some statistics.
 

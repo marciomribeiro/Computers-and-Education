@@ -47,7 +47,7 @@
 
 \begin{frontmatter}
 
-\title{A Strategy to Early Identify Potential Failing Students in Introductory Programming Courses}
+\title{A Strategy to Early Identify Potential Dropout Students in Introductory Programming Courses}
 %\tnotetext[mytitlenote]{Fully documented templates are available in the elsarticle package on \href{http://www.ctan.org/tex-archive/macros/latex/contrib/elsarticle}{CTAN}.}
 
 %% Group authors per affiliation:
@@ -97,4 +97,4 @@ Programming courses, clustering
 
 \bibliography{mybibfile}
 
-\end{document} 
+\end{document}
