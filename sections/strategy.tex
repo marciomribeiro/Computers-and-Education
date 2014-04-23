@@ -52,7 +52,9 @@ We choose three groups because ???
 
 \subsection{Summary}
 
-Figure~\ref{fig:strategy} combines all steps of our strategy. As the classes are happening, students are encouraged to solve exercises using the problems of The Huxley. Although solving exercises is not mandatory, there are some particular activities where the professor forced students to use The Huxley. Next, we collect the metrics we detailed in Section~\ref{sec:metrics}. Then, we execute a R script we implemented to execute the clustering algorithm. As can be seen, there are three groups, represented by circles, squares, and stars. \todo{falar dos 30 dias}
+Figure~\ref{fig:strategy} combines all steps of our strategy. As the classes are happening, students are encouraged to solve exercises using the problems of Huxley. Although solving exercises is not mandatory, there some particular activities where the professor forces students to use Huxley. Next, we collect the metrics we detail in Section~\ref{sec:metrics}. To identify potential failing students \textit{early}, we collect the metrics for the first 30 days of the introductory programming courses. Then, we execute the k-means clustering algorithm.
+
+%Then, we execute a R script we implemented to execute the clustering algorithm. As can be seen, there are three groups, represented by circles, squares, and stars. \todo{falar dos 30 dias}
 
 \begin{figure}[htb]
 \centering
@@ -60,11 +62,3 @@ Figure~\ref{fig:strategy} combines all steps of our strategy. As the classes are
 \caption{Summary of our strategy to identify potential failing students.}
 \label{fig:strategy}
 \end{figure}
-
-Now, according to the groups, we have the potential failing students, the ones that have a small number of submissions and correct submissions (represented by circles). Notice we also have students that are potential candidates to successfully pass (represented by stars): after 30 days, they seem to be studying hard, due to the high number of submissions.
-
-After applying the clustering algorithm, we need to check if the algorithm correctly predicted the failing students. To do so, we use the academic system of the Federal University of Alagoas to look for grades and check whether the students passed or not. For example, for the detached star, the algorithm pointed it right: after 30 days, it identified the student would pass and she did. The same happened for the detached circles: after 30 days, the algorithm pointed that both students would not pass and they did not. Nevertheless, notice that our strategy is susceptible to false positives (the algorithm pointed the student would pass, but she did not) and false negatives (the algorithm pointed the student would not pass, but she did). We shall consider and discuss these cases in Section~\ref{}.
-
-After confronting the algorithm results with the academic system, we perform some statistics.
-
-\todo{essa parte da estatistica nao eh a estrategia. Tem que separar as coisas! Sera que essa figura esta com cara de explicar a avaliacao?} 
