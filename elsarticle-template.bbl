@@ -1,8 +1,31 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{\texttt{#1}}\fi
 \expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
 \expandafter\ifx\csname href\endcsname\relax
   \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{bennedsen-sigcse}
+J.~Bennedsen, M.~E. Caspersen,
+  \href{http://doi.acm.org/10.1145/1272848.1272879}{Failure rates in
+  introductory programming}, SIGCSE Bulletin. 39~(2) (2007) 32--36.
+\newblock \href {http://dx.doi.org/10.1145/1272848.1272879}
+  {\path{doi:10.1145/1272848.1272879}}.
+\newline\urlprefix\url{http://doi.acm.org/10.1145/1272848.1272879}
+
+\bibitem{paes2013ferramenta}
+R.~d.~B. Paes, R.~Malaquias, M.~Guimar{\~a}es, H.~Almeida,
+  \href{http://www.br-ie.org/pub/index.php/wcbie/article/view/2669}{Ferramenta
+  para a avalia{\c{c}}{\~a}o de aprendizado de alunos em programa{\c{c}}{\~a}o
+  de computadores}, in: Anais dos Workshops do Congresso Brasileiro de
+  Inform{\'a}tica na Educa{\c{c}}{\~a}o, Vol.~1, 2013, pp. 203--212, in
+  portuguese.
+\newblock \href {http://dx.doi.org/10.5753/CBIE.WCBIE.2013.203}
+  {\path{doi:10.5753/CBIE.WCBIE.2013.203}}.
+\newline\urlprefix\url{http://www.br-ie.org/pub/index.php/wcbie/article/view/2669}
+
+\bibitem{jenkins-ltsn02}
+T.~Jenkins, {On the Difficulty of Learning to Program}, in: 3rd annual
+  Conference of LTSN-ICS,, 2002.
 
 \end{thebibliography}
