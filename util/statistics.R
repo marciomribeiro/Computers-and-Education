@@ -13,10 +13,10 @@
 ########
 
 # number of success
-precision_success=32
+precision_success=32 #14
 
 # success+fails
-precision_trials=40
+precision_trials=40 #24
 
 # alternative hypothesis
 precision_h1 = .6
