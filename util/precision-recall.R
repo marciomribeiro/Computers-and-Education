@@ -9,7 +9,7 @@
 ############
 # INPUT DATA
 ############
-data = read.csv("/Users/marcioribeiro/Dropbox/Meus Artigos/2014/Computers and Education/util/Dados.csv", header = TRUE, sep = ",")
+data = read.csv("/Users/marcioribeiro/Dropbox/Meus Artigos/2014/Computers and Education/util/Dados - 3 grupos.csv", header = TRUE, sep = ",")
 
 #print(data)
 
@@ -26,7 +26,7 @@ precision_trials = nrow(subset(data, subset = (PRECISION.SET == 1)))
 print(paste("Precision set = ", precision_trials, sep=""))
 
 # alternative hypothesis
-precision_h1 = .79
+precision_h1 = .72
 
 # Hypothesis test
 print(prop.test(precision_success, precision_trials, p = precision_h1, alt="greater", correct=FALSE))
@@ -45,7 +45,7 @@ recall_trials = nrow(subset(data, subset = (RECALL.SET == 1)))
 print(paste("Recall set = ", recall_trials, sep=""))
 
 # alternative hypothesis
-recall_h1 = .79
+recall_h1 = .72
 
 # Hypothesis test
 print(prop.test(recall_success, recall_trials, p = recall_h1, alt="greater", correct=FALSE))
