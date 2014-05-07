@@ -1,0 +1,57 @@
+> source('~/Dropbox/Meus Artigos/2014/Computers and Education/util/precision-recall.R')
+[1] "Precision success = 92"
+[1] "Precision set = 145"
+
+	1-sample proportions test without continuity correction
+
+data:  precision_success out of precision_trials, null probability precision_h1
+X-squared = 5.26, df = 1, p-value = 0.9891
+alternative hypothesis: true p is greater than 0.72
+95 percent confidence interval:
+ 0.5667961 1.0000000
+sample estimates:
+        p 
+0.6344828 
+
+[1] "Recall success = 92"
+[1] "Recall set = 115"
+
+	1-sample proportions test without continuity correction
+
+data:  recall_success out of recall_trials, null probability recall_h1
+X-squared = 3.6508, df = 1, p-value = 0.02802
+alternative hypothesis: true p is greater than 0.72
+95 percent confidence interval:
+ 0.7320694 1.0000000
+sample estimates:
+  p 
+0.8 
+===================================================================
+> source('~/Dropbox/Meus Artigos/2014/Computers and Education/util/precision-recall.R')
+[1] "Precision success = 73"
+[1] "Precision set = 91"
+
+	1-sample proportions test without continuity correction
+
+data:  precision_success out of precision_trials, null probability precision_h1
+X-squared = 3.0498, df = 1, p-value = 0.04037
+alternative hypothesis: true p is greater than 0.72
+95 percent confidence interval:
+ 0.7252261 1.0000000
+sample estimates:
+        p 
+0.8021978 
+
+[1] "Recall success = 73"
+[1] "Recall set = 115"
+
+	1-sample proportions test without continuity correction
+
+data:  recall_success out of recall_trials, null probability recall_h1
+X-squared = 4.1425, df = 1, p-value = 0.9791
+alternative hypothesis: true p is greater than 0.72
+95 percent confidence interval:
+ 0.5586198 1.0000000
+sample estimates:
+        p 
+0.6347826
