@@ -6,12 +6,19 @@
 # Reference on R: http://bit.ly/r_hypothesis
 ############################################################
 
+
+#script_dir='Colocar aqui o path do gabarito'
+script_dir='D:\\Documents\\pessoal-dropbox\\Dropbox\\artigos\\computers_education_2014\\util\\'
+
+data_script = paste(script_dir,"data_3_groups.csv",sep="")
+#data_script = paste(script_dir,"data_2_groups.csv",sep="")
+
+
+
 ############
 # INPUT DATA
 ############
-data = read.csv("/Users/marcioribeiro/Dropbox/Meus Artigos/2014/Computers and Education/util/Dados - 3 grupos.csv", header = TRUE, sep = ",")
-
-#print(data)
+data = read.csv(data_script, header = TRUE, sep = ",")
 
 ####################
 # Precision analysis
@@ -45,7 +52,7 @@ recall_trials = nrow(subset(data, subset = (RECALL.SET == 1)))
 print(paste("Recall set = ", recall_trials, sep=""))
 
 # alternative hypothesis
-recall_h1 = .72
+recall_h1 = .55
 
 # Hypothesis test
 print(prop.test(recall_success, recall_trials, p = recall_h1, alt="greater", correct=FALSE))

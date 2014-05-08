@@ -1,0 +1,224 @@
+,,ID,,,ALGORITHM,STUDENT,RELEVANTS,RETRIEVED,AND,PRECISION SET,PRECISION SUCCESS,RECALL SET,RECALL SUCCESS
+,Alana Messias,1,12,45,3,AP,0,0,0,,,,
+,Anderson Gustavo,1,11,36,3,RP,1,0,0,,,1,0
+,Anderson José Silva de Oliveira,1,11,56,3,AP,0,0,0,,,,
+,Bruno Cavalcanti,1,10,27,2,RP,1,1,1,1,1,1,1
+,Bruno Flávio,1,0,11,2,RP,1,1,1,1,1,1,1
+,Bruno Henrique Lira dos Anjos,1,9,70,1,AP,0,0,0,,,,
+,Cleiton Tavares,1,5,23,2,RP,1,1,1,1,1,1,1
+,Diogo Lins,1,12,40,3,AP,0,0,0,,,,
+,Dêvis Tenório,1,10,37,3,RP,1,0,0,,,1,0
+,Everton Borges,1,12,105,1,RP,1,0,0,,,1,0
+,Francisco Dalton,1,18,57,3,AP,0,0,0,,,,
+,Guilherme Medeiros,1,15,40,3,AP,0,0,0,,,,
+,Igor Bomfim,1,7,24,2,RP,1,1,1,1,1,1,1
+,Jeovane da Costa,1,11,91,1,AP,0,0,0,,,,
+,Joilnen Leite,1,11,29,2,RP,1,1,1,1,1,1,1
+,José Gustavo Costa,1,9,36,3,RP,1,0,0,,,1,0
+,José Maria Pereira,1,14,74,1,RP,1,0,0,,,1,0
+,Jéssica Carolina,1,8,116,1,RP,1,0,0,,,1,0
+,Laysa Silva de Paula,1,10,48,3,RP,1,0,0,,,1,0
+,Leonardo F.B. Lopes,1,0,2,2,RP,1,1,1,1,1,1,1
+,Leonildo de Mello,1,18,63,3,RP,1,0,0,,,1,0
+,Matheus Agra,1,11,30,2,RP,1,1,1,1,1,1,1
+,Moisés Velozo,1,8,22,2,RP,1,1,1,1,1,1,1
+,Neftali Dias,1,8,22,2,RP,1,1,1,1,1,1,1
+,Nick Mitchell,1,5,17,2,RP,1,1,1,1,1,1,1
+,Tais de Souja,1,7,48,3,RP,1,0,0,,,1,0
+,Thiago Monteiro,1,8,34,3,RP,1,0,0,,,1,0
+,Thiego Barbosa,1,0,8,2,RP,1,1,1,1,1,1,1
+,Vinícius Vagner da Silva Correia,1,0,16,2,RP,1,1,1,1,1,1,1
+,Vitor vieira,1,4,21,2,RP,1,1,1,1,1,1,1
+,Wilton Daniel,1,0,11,2,RP,1,1,1,1,1,1,1
+,Ísis Costa,1,13,33,3,AP,0,0,0,,,,
+,Adeilson da Silva,22,31,69,2,AP,0,1,0,1,0,,
+,Adeilton Jorge Rocha Sobrinho,22,20,120,3,AP,0,0,0,,,,
+,Ana Carla,22,25,88,2,RP,1,1,1,1,1,1,1
+,André Ferreira,22,37,119,3,AP,0,0,0,,,,
+,Ariquenes Acioly,22,44,154,3,AP,0,0,0,,,,
+,Arthur C. de Azevedo,22,21,55,2,RP,1,1,1,1,1,1,1
+,Caio Rodrigues,22,8,22,2,RP,1,1,1,1,1,1,1
+,Daniel Borges,22,37,76,2,AP,0,1,0,1,0,,
+,Daniel França,22,27,123,3,RP,1,0,0,,,1,0
+,Dijania Correia da Silva Melo,22,1,11,2,RP,1,1,1,1,1,1,1
+,Diogo Fagundes,22,11,45,2,RP,1,1,1,1,1,1,1
+,Eric Augusto,22,14,53,2,RP,1,1,1,1,1,1,1
+,Eunyton Verçosa,22,30,82,2,RP,1,1,1,1,1,1,1
+,Euricles,22,23,79,2,RP,1,1,1,1,1,1,1
+,Fagner Garrote,22,46,228,3,AP,0,0,0,,,,
+,Gabriel Lins,22,35,108,3,AP,0,0,0,,,,
+,Hiago de Souza,22,16,52,2,RP,1,1,1,1,1,1,1
+,Isaac Melo,22,21,52,2,RP,1,1,1,1,1,1,1
+,José Douglas Santana Cupertino,22,26,87,2,RP,1,1,1,1,1,1,1
+,Jário José dos Santos Júnior,22,65,193,3,AP,0,0,0,,,,
+,Jéssica do N. Vieira,22,36,95,2,AP,0,1,0,1,0,,
+,Klauss Gutenberg,22,18,86,2,RP,1,1,1,1,1,1,1
+,Kyokeneth Alves,22,6,55,2,RP,1,1,1,1,1,1,1
+,Leonildo de Mello,22,16,87,2,RP,1,1,1,1,1,1,1
+,Luciano Menezes,22,19,52,2,RP,1,1,1,1,1,1,1
+,Luís Gustavo,22,39,108,3,RP,1,0,0,,,1,0
+,Marcelo de Albuquerque Souza Santos,22,19,71,2,RP,1,1,1,1,1,1,1
+,Marcus Henrique,22,3,55,2,RP,1,1,1,1,1,1,1
+,Márcia Renata,22,46,127,3,AP,0,0,0,,,,
+,Paulo Henrique Félix Barbosa,22,27,126,3,AP,0,0,0,,,,
+,Ricardo Lessa,22,17,55,2,RP,1,1,1,1,1,1,1
+,Rogério Carvalho,22,21,95,2,RP,1,1,1,1,1,1,1
+,Rostan Menezes,22,11,35,2,RP,1,1,1,1,1,1,1
+,Tamirys Pino,22,34,121,3,AP,0,0,0,,,,
+,Thiago José Gomes Oliveira,22,22,80,2,RP,1,1,1,1,1,1,1
+,Tibério Júlio,22,77,519,1,AP,0,0,0,,,,
+,Wlady Millar,22,5,13,2,RP,1,1,1,1,1,1,1
+,Amanda Barbosa,28,21,76,2,AP,0,0,0,,,,
+,Antonio Manoel de Lima Neto,28,40,189,1,AP,0,0,0,,,,
+,Arthur Laercio Nascimento Silva,28,37,132,2,AP,0,0,0,,,,
+,Callina Nascimento da Nóbrega,28,26,77,2,AP,0,0,0,,,,
+,Carla Mylenna da Silva Costa,28,24,44,3,RP,1,1,1,1,1,1,1
+,Carlos Henrique da Rocha Nery,28,19,78,2,AP,0,0,0,,,,
+,Cassia Palmeira,28,22,36,3,RP,1,1,1,1,1,1,1
+,Cresivando Fernandes,28,21,84,2,RP,1,0,0,,,1,0
+,Davidson Lucas Novais Nicácio,28,40,86,2,AP,0,0,0,,,,
+,Felipe Emidio Esteves da Silva,28,77,214,1,AP,0,0,0,,,,
+,Harnon Anizio Pereira da Silva,28,37,233,1,RP,1,0,0,,,1,0
+,Joao Pedro de Souza Jardim Da Costa,28,28,89,2,AP,0,0,0,,,,
+,Jorge Henrique Dos Santos Matias,28,10,84,2,AP,0,0,0,,,,
+,Jose Henrique Dos Santos Moraes,28,9,26,3,RP,1,1,1,1,1,1,1
+,Jose Leandro da Silva Filho,28,18,79,2,AP,0,0,0,,,,
+,João Antonio Quaresma Lins Neto,28,29,145,2,AP,0,0,0,,,,
+,João Paulo Clarindo dos Santos,28,41,137,2,AP,0,0,0,,,,
+,Kamilla Kemilly Tenório Alves dos Santos,28,39,192,1,AP,0,0,0,,,,
+,Karla Elisabeth Cristo dos Santos,28,30,115,2,AP,0,0,0,,,,
+,Luan Henrique Santos Simões de Almeida,28,82,170,1,AP,0,0,0,,,,
+,Luana Mayara Santiago,28,13,64,3,AP,0,1,0,1,0,,
+,Lucas Antonio Ferro do Amaral,28,40,119,2,AP,0,0,0,,,,
+,Lucas Silva de Amorim,28,38,105,2,RP,1,0,0,,,1,0
+,Marcos Mauricio Pedrosa Souza Peixoto,28,9,34,3,RP,1,1,1,1,1,1,1
+,Maxwell Acioli,28,138,301,1,AP,0,0,0,,,,
+,Nilson Sales de Carvalho,28,75,220,1,AP,0,0,0,,,,
+,Raphael,28,5,21,3,RP,1,1,1,1,1,1,1
+,Roland dos Santos Gonçalves Sobrinho,28,23,120,2,AP,0,0,0,,,,
+,Rubens da Cunha Camelo Anjos,28,72,194,1,AP,0,0,0,,,,
+,Thiago Emmanuel de Oliveira Lima,28,28,85,2,AP,0,0,0,,,,
+,Victor Aurelio Melo Paccola,28,18,89,2,RP,1,0,0,,,1,0
+,Wagner Santos de Melo,28,12,81,2,RP,1,0,0,,,1,0
+,Wesley Marques Rocha,28,33,92,2,AP,0,0,0,,,,
+,Wylliam Barboza da Silva,28,65,214,1,AP,0,0,0,,,,
+,Yasmim Silva Bezerra,28,34,79,2,AP,0,0,0,,,,
+,Ana Geórgia Gama,38,25,68,3,AP,0,1,0,1,0,,
+,Bruno da Silva Belo,38,27,183,1,AP,0,0,0,,,,
+,Clóvis Gabriel,38,37,270,1,AP,0,0,0,,,,
+,DANILO NOBRE,38,38,196,1,RP,1,0,0,,,1,0
+,David Firmino Silva,38,13,107,2,RP,1,0,0,,,1,0
+,Diego Raphaell dos Santos,38,30,202,1,RP,1,0,0,,,1,0
+,Emanuele Lopes da Silva,38,42,276,1,RP,1,0,0,,,1,0
+,Euclides Roberto Cavalcante de Melo,38,38,201,1,AP,0,0,0,,,,
+,Evandro Verdino de Lima Junior,38,43,92,2,AP,0,0,0,,,,
+,Fabiana de Souza Vasconcelos Pimentel,38,15,29,3,RP,1,1,1,1,1,1,1
+,Gean da Silva Santos,38,36,208,1,AP,0,0,0,,,,
+,Gizelly Sousa de Melo,38,7,18,3,RP,1,1,1,1,1,1,1
+,Helen Leopoldo de Cordova,38,45,357,1,RP,1,0,0,,,1,0
+,Ian Ramos de Oliveira Lemos,38,0,5,3,RP,1,1,1,1,1,1,1
+,Italo Oliveira,38,26,102,2,AP,0,0,0,,,,
+,Josmário Albuquerque,38,26,88,2,AP,0,0,0,,,,
+,João Paulo Albuquerque de Lima,38,41,150,2,RP,1,0,0,,,1,0
+,João Paulo Montenegro Barbosa Brandão,38,34,97,2,RP,1,0,0,,,1,0
+,João Pedro da Silva Neto,38,30,177,1,RP,1,0,0,,,1,0
+,João Victor,38,25,90,2,RP,1,0,0,,,1,0
+,Mailton Gomes da Silva Santos,38,6,14,3,RP,1,1,1,1,1,1,1
+,Mauricio Henrique Souza Araújo,38,15,63,3,RP,1,1,1,1,1,1,1
+,Moezio L. Silva Lino,38,49,212,1,AP,0,0,0,,,,
+,Márcia Gabriela da Silva Aquino,38,25,127,2,RP,1,0,0,,,1,0
+,Paulo Vinicius Peixoto Menezes,38,28,108,2,AP,0,0,0,,,,
+,Raissa Mary Luna de Almeida,38,8,41,3,RP,1,1,1,1,1,1,1
+,Rivo Sarmento,38,17,53,3,AP,0,1,0,1,0,,
+,Rodolfo Cabral,38,27,91,2,RP,1,0,0,,,1,0
+,Rodrigo Santos,38,34,194,1,RP,1,0,0,,,1,0
+,Welington da Silva,38,45,142,2,AP,0,0,0,,,,
+,Wilker Melo,38,18,196,1,AP,0,0,0,,,,
+,Ygor Valença de Araujo,38,20,85,2,AP,0,0,0,,,,
+,Allef Ricardo,58,12,58,3,AP,0,1,0,1,0,,
+,Amanda Luize Marques dos Santos,58,19,65,3,RP,1,1,1,1,1,1,1
+,Caio Barbosa,58,27,71,3,AP,0,1,0,1,0,,
+,Caio Barbosa Mota,58,26,117,1,RP,1,0,0,,,1,0
+,Davis Fellipe G. Pereira,58,29,71,3,AP,0,1,0,1,0,,
+,Diogo Alessander do Carmo Silva,58,12,105,1,RP,1,0,0,,,1,0
+,Douglas Bacelar,58,5,45,3,AP,0,1,0,1,0,,
+,Elivelton Cristiano dos S. Silva,58,24,80,1,AP,0,0,0,,,,
+,Emanuelle Cavalcante,58,10,39,3,RP,1,1,1,1,1,1,1
+,Engels B. de Castro,58,6,19,3,RP,1,1,1,1,1,1,1
+,Eric Belarmino Diniz,58,49,223,2,AP,0,0,0,,,,
+,Erivaldo Lourenço Mariano,58,24,108,1,AP,0,0,0,,,,
+,Fabrício Domingos Ferreira da Rocha,58,7,18,3,RP,1,1,1,1,1,1,1
+,Fillipe Luna,58,23,155,2,RP,1,0,0,,,1,0
+,Fredherico Cavalli Dexheimer,58,23,82,1,RP,1,0,0,,,1,0
+,Hotaviano Melo,58,11,69,3,RP,1,1,1,1,1,1,1
+,Hugo Wolff Becker,58,33,121,1,AP,0,0,0,,,,
+,Igor Moura,58,7,34,3,RP,1,1,1,1,1,1,1
+,Jhonatan Mickael S. Nascimento,58,35,90,1,AP,0,0,0,,,,
+,Jonathan Araújo,58,13,47,3,AP,0,1,0,1,0,,
+,José Arthur M. S. de C. Ramos,58,28,88,1,RP,1,0,0,,,1,0
+,João Pedro da Silva Neto,58,12,25,3,RP,1,1,1,1,1,1,1
+,Juliana de Carvalho Cavalcanti,58,37,138,1,AP,0,0,0,,,,
+,Lucas Agra de Omena,58,39,105,1,RP,1,0,0,,,1,0
+,Noel Diego Bastos dos Santos,58,49,109,1,AP,0,0,0,,,,
+,Ruth Maria,58,40,197,2,AP,0,0,0,,,,
+,Saulo Araújo da Silva,58,16,31,3,RP,1,1,1,1,1,1,1
+,Thiago Emmanuel Gomes Rodrigues,58,11,75,3,RP,1,1,1,1,1,1,1
+,Thiago de Albuquerque Souza Medeiros,58,8,63,3,RP,1,1,1,1,1,1,1
+,Alessandra Aleluia,67,43,97,2,AP,0,1,0,1,0,,
+,Alesson Santana Ferro,67,85,352,1,AP,0,0,0,,,,
+,Anderlan Oliveira,67,2,6,2,RP,1,1,1,1,1,1,1
+,Bruno Monteiro,67,41,137,3,RP,1,0,0,,,1,0
+,Cristianne Magano,67,39,93,2,RP,1,1,1,1,1,1,1
+,Davson Alberto,67,26,100,2,RP,1,1,1,1,1,1,1
+,Eduardo José Souza de Lima,67,38,159,3,RP,1,0,0,,,1,0
+,Eduardo Monteiro,67,63,208,3,AP,0,0,0,,,,
+,Gabriel Ribeiro,67,24,88,2,RP,1,1,1,1,1,1,1
+,Igor Braga Duarte,67,14,34,2,RP,1,1,1,1,1,1,1
+,Janderson Angelo,67,57,143,3,AP,0,0,0,,,,
+,Jefferson Feitosa Ladislau,67,68,190,3,AP,0,0,0,,,,
+,Jonathan Correia de Barros,67,65,170,3,AP,0,0,0,,,,
+,João Gabriel,67,37,67,2,AP,0,1,0,1,0,,
+,João Victor de Oliveira Araújo,67,52,199,3,AP,0,0,0,,,,
+,Julius Martins,67,42,177,3,AP,0,0,0,,,,
+,Leonardo Tenório de Souza Lima,67,61,130,3,AP,0,0,0,,,,
+,Lucas Tadeu,67,34,171,3,RP,1,0,0,,,1,0
+,Luis Fernando Cabral de Lima,67,24,72,2,RP,1,1,1,1,1,1,1
+,Paulo Roberto,67,36,177,3,RP,1,0,0,,,1,0
+,Pedro Ivo Gomes Silva,67,98,258,1,AP,0,0,0,,,,
+,Pedro Leahy Pinaud,67,24,57,2,AP,0,1,0,1,0,,
+,Ragner Bello,67,34,96,2,AP,0,1,0,1,0,,
+,Ricardo Felipe da Silva,67,24,210,3,RP,1,0,0,,,1,0
+,Victor Gabriel Lima Holanda,67,43,142,3,AP,0,0,0,,,,
+,Vinícius José Farias Santos,67,31,87,2,AP,0,1,0,1,0,,
+,Wagner de Oliveira Barros,67,24,78,2,RP,1,1,1,1,1,1,1
+,Alexandre Lopes Acioli Olegario',80,62,198,1,AP,0,0,0,,,,
+,Ana Paula Galindo,80,13,46,2,RP,1,1,1,1,1,1,1
+,Cristiano Henrique de Souza Lira,80,40,199,1,AP,0,0,0,,,,
+,Cássio Jordy Guedes Dos Santos,80,4,18,2,RP,1,1,1,1,1,1,1
+,Daniel Tenorio Martins de Oliveira,80,59,187,1,AP,0,0,0,,,,
+,Douglas José Tenório Martins de Oliveira,80,58,155,1,AP,0,0,0,,,,
+,Francisco Buarque de Lira Neto,80,109,345,3,AP,0,0,0,,,,
+,Gabriel Felipe Santos Rocha,80,69,276,3,AP,0,0,0,,,,
+,Helivelton Gomes Barbosa,80,16,80,2,AP,0,1,0,1,0,,
+,Hugo Alex,80,22,119,1,AP,0,0,0,,,,
+,Hugo Ney,80,41,294,3,AP,0,0,0,,,,
+,Hyuri Maciel,80,37,116,1,AP,0,0,0,,,,
+,Isaac Barros,80,80,278,3,AP,0,0,0,,,,
+,Isaac Fernando,80,90,518,3,AP,0,0,0,,,,
+,Jirlean Arley Fausto de Melo,80,21,105,2,RP,1,1,1,1,1,1,1
+,José Carlos Viana Filho,80,46,149,1,AP,0,0,0,,,,
+,José Eduardo de Araújo Filho,80,15,134,1,RP,1,0,0,,,1,0
+,João Victor Palmeira,80,44,107,1,RP,1,0,0,,,1,0
+,Kelvin Dias Dules,80,51,257,3,AP,0,0,0,,,,
+,Lucas Argolo,80,12,38,2,RP,1,1,1,1,1,1,1
+,Lucas Dué de Oliveira Farias,80,43,165,1,AP,0,0,0,,,,
+,Luiz Matheus de Alencar Carvalho,80,57,157,1,AP,0,0,0,,,,
+,Luiz Paulo de Melo Barroca,80,18,60,2,AP,0,1,0,1,0,,
+,Manoela Cassia dos Santos,80,39,127,1,AP,0,0,0,,,,
+,Naelson Douglas Cirilo Oliveira,80,56,228,1,AP,0,0,0,,,,
+,Patrick Lebrand Marçal Brennand,80,31,84,2,RP,1,1,1,1,1,1,1
+,Rafael Merola Alves,80,27,138,1,AP,0,0,0,,,,
+,Rodrigo Fonseca Freitas,80,25,61,2,RP,1,1,1,1,1,1,1
+,Victor Rafael Almeida Cavalcante,80,26,79,2,RP,1,1,1,1,1,1,1
+,Ziran de Moura Santos,80,29,104,2,RP,1,1,1,1,1,1,1
+,igor wilckson,80,24,47,2,RP,1,1,1,1,1,1,1
