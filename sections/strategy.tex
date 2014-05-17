@@ -38,23 +38,19 @@ We use two metrics in our strategy. We explain them in what follows:
 
 Depending on the level of difficulty of a problem, students may submit several times to solve it. However, notice that this is not necessarily a bad thing regarding the learning process. For example, submitting many times means that students are somehow practicing and studying continuously. Thus, although she is not hitting a right solution, she is trying hard and will eventually hit one. Nevertheless, we need to carefully analyze \todots
 
-\todo{Por que essas metricas sao boas? Por que escolhemos elas? O texto acima ajuda a explicar isso? Essas metricas nao sao obvias?}
+\todo{Por que essas metricas sao boas? A referencia que eu pedi ao Ig pode ajudar a responder porque essas metricas sao boas!}
 
 \subsection{Clustering algorithm}
 
-To identify potential failing students, we use the well-known clustering algorithm k-means~\cite{}. As input, we set the algorithm to compute three groups. To compute the groups, the algorithm takes into account the metrics we present in Section~\ref{sec:metrics}.
+To identify potential failing students, we use a clustering algorithm to define groups of students. Our idea consists of identifying different groups of students so that we can clearly separate students susceptible to fail from the other ones. To compute the groups, the algorithm takes into account the metrics we present in Section~\ref{sec:metrics}. To make the strategy parameterizable in terms of number of groups, we use the well-known clustering algorithm k-means~\cite{}, which takes such a number as input.
 
-We choose three groups because ???
+Notice that the number of groups plays an important role on identifying potential failing students. In this paper, we set the algorithm to compute two and three groups as well as evaluate both cases. When considering two groups, we define them as the students who will whether fail or pass. For three groups, we have fail, pass, and students in which the strategy cannot conclude anything about them. This is reasonable since our study focuses on the first 30 days, which means that our conclusions regarding this third group might be completely wrong: these students can either improve themselves and pass the course or fail due to several reasons.
 
-\todo{Por que escolhemos clustering? Por que o k-means?}
-
-\todo{Por que 3 grupos? O do meio seria impossível prever algo. Mas isso nao e obvio?}
+We focus on two and three groups because (i) using one group is useless; and (ii) more than three may lead the strategy to define many groups where it cannot conclude anything. By using three, we have only one group where this happens.
 
 \subsection{Summary}
 
-Figure~\ref{fig:strategy} combines all steps of our strategy. As the classes are happening, students are encouraged to solve exercises using the problems of Huxley. Although solving exercises is not mandatory, there some particular activities where the professor forces students to use Huxley. Next, we collect the metrics we detail in Section~\ref{sec:metrics}. To identify potential failing students \textit{early}, we collect the metrics for the first 30 days of the introductory programming courses. Then, we execute the k-means clustering algorithm.
-
-%Then, we execute a R script we implemented to execute the clustering algorithm. As can be seen, there are three groups, represented by circles, squares, and stars. \todo{falar dos 30 dias}
+Figure~\ref{fig:strategy} combines all steps of our strategy. As the classes are happening, students are encouraged to solve the problems available in Huxley. Although solving exercises is not mandatory, there some particular activities where the professor forces students to use Huxley, such as formal exams. Next, we collect the metrics we detail in Section~\ref{sec:metrics}. To identify potential failing students \textit{early}, we collect the metrics for the first 30 days of the introductory programming courses. Then, we execute the k-means clustering algorithm.
 
 \begin{figure}[htb]
 \centering

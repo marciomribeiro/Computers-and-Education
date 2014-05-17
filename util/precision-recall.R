@@ -7,11 +7,11 @@
 ############################################################
 
 
-#script_dir='Colocar aqui o path do gabarito'
-script_dir='D:\\Documents\\pessoal-dropbox\\Dropbox\\artigos\\computers_education_2014\\util\\'
+script_dir='/Users/marcioribeiro/Dropbox/Meus Artigos/2014/Computers and Education/util/'
+#script_dir='D:\\Documents\\pessoal-dropbox\\Dropbox\\artigos\\computers_education_2014\\util\\'
 
-data_script = paste(script_dir,"data_3_groups.csv",sep="")
-#data_script = paste(script_dir,"data_2_groups.csv",sep="")
+#data_script = paste(script_dir,"data_3_groups.csv",sep="")
+data_script = paste(script_dir,"data_2_groups.csv",sep="")
 
 
 
