@@ -111,7 +111,9 @@ In our evaluation, we use data of 7 courses (3.5 years) totalling \totalStudents
 
 \subsubsection{Two groups}
 
-When considering two groups, we set the strategy to consider all students in two categories: fail or pass. Figure~\ref{fig:2-groups} illustrates the results for all courses. Notice that Figure~\ref{fig:2-2011-01} contains an outlier. In this particular case, the strategy pointed that all students but one would fail the course. This way, this represents a disadvantage of using two groups.
+When considering two groups, we set the strategy to consider all students in two categories: fail or pass. Figure~\ref{fig:2-groups} illustrates the results for all courses. Notice that Figure~\ref{fig:2-2011-01} contains an outlier. In this particular case, the strategy pointed that all students but one would fail the course. Clearly this result is a consequence of such outlier. There are strategies to remove outliers.
+
+%This way, this represents a disadvantage of using two groups.
 
 \begin{figure*}[ht]
      \begin{center}
@@ -148,7 +150,7 @@ When considering two groups, we set the strategy to consider all students in two
 	 \label{fig:2-groups}
 \end{figure*}
 
-By using two groups, we achieve the following results for precision and recall:
+To better analyze our results, we remove this outlier and execute our strategy again. By using two groups and properly removing the outlier, we achieve the following results for precision and recall:
 
 \vspace{0.2cm}
 \noindent
@@ -171,40 +173,40 @@ Besides these disadvantages, our strategy is susceptible to blablabla, raising o
 
 Analogously, we set our strategy to consider three groups. Here, besides the failing and passing groups, there is one extra group where the strategy cannot conclude anything about it. Figure~\ref{fig:3-groups} shows the results for three groups. Differently from two groups, here outliers do not compromise the strategy.
 
-%\begin{figure*}[h]
-%     \begin{center}
-%         \subfigure[2010.02] {
-%             \includegraphics[scale=0.21]{images/3-2010-02.png}
-%             \label{fig:3-2010-02}
-%         }
-%         \subfigure[2011.01] {
-%             \includegraphics[scale=0.21]{images/3-2011-01.png}
-%             \label{fig:3-2011-01}
-%         }
-%         \subfigure[2011.02] {
-%             \includegraphics[scale=0.21]{images/3-2011-02.png}
-%             \label{fig:3-2011-02}
-%         }
-%         \subfigure[2012.01] {
-%             \includegraphics[scale=0.21]{images/3-2012-01.png}
-%             \label{fig:3-2012-01}
-%         }
-%         \subfigure[2012.02] {
-%             \includegraphics[scale=0.21]{images/3-2012-02.png}
-%             \label{fig:3-2012-02}
-%         }
-%         \subfigure[2013.01] {
-%             \includegraphics[scale=0.21]{images/3-2013-01.png}
-%             \label{fig:3-2013-01}
-%         }
-%         \subfigure[2013.02] {
-%             \includegraphics[scale=0.21]{images/3-2013-02.png}
-%             \label{fig:3-2013-02}
-%         }
-%     \end{center}
-%     \caption{Strategy applied with three groups.}
-%	 \label{fig:3-groups}
-%\end{figure*}
+\begin{figure*}[h]
+     \begin{center}
+         \subfigure[2010.02] {
+             \includegraphics[scale=0.21]{images/3-2010-02.png}
+             \label{fig:3-2010-02}
+         }
+         \subfigure[2011.01] {
+             \includegraphics[scale=0.21]{images/3-2011-01.png}
+             \label{fig:3-2011-01}
+         }
+         \subfigure[2011.02] {
+             \includegraphics[scale=0.21]{images/3-2011-02.png}
+             \label{fig:3-2011-02}
+         }
+         \subfigure[2012.01] {
+             \includegraphics[scale=0.21]{images/3-2012-01.png}
+             \label{fig:3-2012-01}
+         }
+         \subfigure[2012.02] {
+             \includegraphics[scale=0.21]{images/3-2012-02.png}
+             \label{fig:3-2012-02}
+         }
+         \subfigure[2013.01] {
+             \includegraphics[scale=0.21]{images/3-2013-01.png}
+             \label{fig:3-2013-01}
+         }
+         \subfigure[2013.02] {
+             \includegraphics[scale=0.21]{images/3-2013-02.png}
+             \label{fig:3-2013-02}
+         }
+     \end{center}
+     \caption{Strategy applied with three groups.}
+	 \label{fig:3-groups}
+\end{figure*}
 
 We present the precision and recall for three groups in what follows:
 
@@ -225,8 +227,6 @@ $$
 
 \begin{itemize}
 
-	\item Os graficos para 3 grupos estão coloridos e nao tem formas (triangulo, circulo etc). Se gerarmos de novo vai alterar todos os resultados.
-
 	\item \todo{Caralho, que negocio louco da porra. Com 2 grupos, temos 63 e 80. Com 3 grupos e exatamente o contrario, precision com 80 e recall com 63.}
 
 	\item \todo{Falar sobre os resultados do teste de hipotese}
@@ -236,6 +236,10 @@ $$
 \end{itemize}
 
 \subsection{Discussion}
+
+In this section we discuss the results. We first focus on the results for two groups and then we discuss the results for three groups.
+
+When applying our strategy considering two groups, the results indicate a low precision. This means that the strategy yields many false positives, i.e., the strategy indicates that many students would fail but in fact they did not. In addition, the results indicate a high recall. Our interpretation is that the strategy is returning too many students \todots
 
 \begin{itemize}
 
