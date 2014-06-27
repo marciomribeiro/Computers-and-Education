@@ -5,6 +5,23 @@
 \expandafter\ifx\csname href\endcsname\relax
   \def\href#1#2{#2} \def\path#1{#1}\fi
 
+\bibitem{yadin-inroads-acm-11}
+A.~Yadin, \href{http://doi.acm.org/10.1145/2038876.2038894}{Reducing the
+  dropout rate in an introductory programming course}, ACM Inroads 2~(4) (2011)
+  71--76.
+\newblock \href {http://dx.doi.org/10.1145/2038876.2038894}
+  {\path{doi:10.1145/2038876.2038894}}.
+\newline\urlprefix\url{http://doi.acm.org/10.1145/2038876.2038894}
+
+\bibitem{why-dropout-icer06}
+P.~Kinnunen, L.~Malmi, \href{http://doi.acm.org/10.1145/1151588.1151604}{Why
+  students drop out cs1 course?}, in: Proceedings of the Second International
+  Workshop on Computing Education Research, ICER '06, ACM, New York, NY, USA,
+  2006, pp. 97--108.
+\newblock \href {http://dx.doi.org/10.1145/1151588.1151604}
+  {\path{doi:10.1145/1151588.1151604}}.
+\newline\urlprefix\url{http://doi.acm.org/10.1145/1151588.1151604}
+
 \bibitem{bennedsen-sigcse}
 J.~Bennedsen, M.~E. Caspersen,
   \href{http://doi.acm.org/10.1145/1272848.1272879}{Failure rates in
@@ -22,8 +39,7 @@ R.~d.~B. Paes, R.~Malaquias, M.~Guimar{\~a}es, H.~Almeida,
   portuguese.
 \newblock \href {http://dx.doi.org/10.5753/CBIE.WCBIE.2013.203}
   {\path{doi:10.5753/CBIE.WCBIE.2013.203}}.
-\newline\urlprefix\url{http://www.br-ie.org/pub/index.php/wcbie/article/view/2%
-669}
+\newline\urlprefix\url{http://www.br-ie.org/pub/index.php/wcbie/article/view/2669}
 
 \bibitem{jenkins-ltsn02}
 T.~Jenkins, {On the Difficulty of Learning to Program}, in: 3rd annual

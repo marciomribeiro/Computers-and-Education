@@ -1,18 +1,12 @@
 \section{Introduction}
 
-\begin{itemize}
-	
-	\item Evaluation: metrics collection during 3.5 years of real programming courses at UFAL, Brazil. Main results: in the first 30 days of the courses we analyzed, our approach could identify students that did not complete the course successfully. We believe that providing early support to these students right after this identification in 30 days, they will have better chance of completing the course.
+The high rate of failing students in introductory programming courses is a problem~\cite{}. In particular, this problem has been reported in several universities around the world~\cite{}. Due to such high failing rates, these courses are often perceived by the students as problematic~\cite{yadin-inroads-acm-11}. In this context, by analyzing several reasons of why the students fail~\cite{why-dropout-icer06}, such as lack of motivation, lack of time, the chosen programming language, previous work report approaches that reduce these rates~\cite{yadin-inroads-acm-11, xxx}.
 
-\end{itemize}
-
-Context: learning during programming courses \todots
-
-Problem: \textit{early} identification of potential failing students \todots
+These studies focus on data, reasons, and characteristics after the student fail. Nevertheless, there is a lack of an approach capable of identifying that students are not comfortable still during the course. This way, professors and mentors would be able to act and consequently help them. However, identifying potential failing students during introductory programming courses is a non-trivial task~\cite{}, specially if we consider that this identification must be done as far as possible, otherwise there will be no enough time to act and the student will drop out the course anyway. When considering programming courses, the situation gets worse even when acting just a bit late, due to the strong prerequisites of understanding previous classes to understand the current one (e.g., to understand loops, students must understand conditional structures).
 
 To minimize this problem, in this paper we propose a strategy to \textit{early} identify failing students in introductory programming courses. Our strategy consists of three simple steps. The first one is to make students use a online exercise system. Then, we collect metrics of each student by using such a system. Finally, we execute a clustering algorithm to form groups so that we are able to separate the potential failing students from the other ones. Here, we apply our strategy considering the first 30 days of the programming course.
 
-To evaluate our strategy, we conduct an empirical study regarding 7 courses (3.5 years) with, in total, \totalStudents students. The programming courses have been ministered at the Federal University of Alagoas, Brazil. The results suggest that our strategy can early detect the majority of the failing students within only 30 days. In particular, our strategy successfully identifies 72\% of the failing students with a 95\% confidence level.
+To evaluate our strategy, we conduct an empirical study regarding 7 courses (3.5 years) with, in total, \totalStudents students. The programming courses have been ministered at the Federal University of Alagoas, Brazil. The results suggest that our strategy can early detect the majority of the failing students within only 30 days. In particular, our strategy successfully identifies 72\% of the failing students with 95\% standard confidence level.
 
 In summary, this paper provides the following contributions:
 
