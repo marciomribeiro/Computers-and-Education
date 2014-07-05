@@ -10,27 +10,42 @@ Next, we detail our strategy to identify these students.
 % This section should answer: Why is this kind of system important to identify potential falling students?
 % Answer: We need metrics. In order to discover how students are performing, it is necessary a close monitoring of students behaviour
 % Talk about Huxley, only enough to explain the metrics: submissions and submission_status (Correct ...)
-In order to discover how students are performing, it is important to define a strategy to close monitoring students’ behavior. This strategy should include a way to extract metrics from students. Online learning tools may be a source for these metrics. In the context of programming, a very popular category of systems is the online judges. These systems present students to a set or programming problems. The students solve the problem using a programming language and then submits their solutions. The online judge runs the student’s solution against a set of test cases and in the case the solution passes over all the tests it will be evaluated as correct, otherwise, it will be evaluated according to the type of error, such as wrong answer, compilation error, runtime error, etc.
+
+To assess the students performance during a course, it is important to closely monitor them. In this context, metrics represent an alternative to measure their performance. However, retrieving metrics regarding each student is a difficult and time-consuming task. To minimize this problem, one might rely on online learning tools, since these systems are not only a source for these metrics, but also allow their automatic retrieval. 
+
+A popular category of this kind of system is the online judges. These systems provide a set of programming problems so that students can submit their solutions. After submitting, the online judge executes the solution against a set of predefined test cases. In case the solution passes over all the tests, the system evaluates the solution as correct. Otherwise, the system evaluates the solution according to the type of the error (e.g., wrong answer, compilation error, time limit exceeded, runtime error, etc) and even might give important tips so that students can successfully solve the problem.
+
+Since students only learn how to program by programming~\cite{jenkins-ltsn02}, the online judges consists of an important environment in the sense students can practice and improve their learning process. Also, as the tool is available online, students can find their own rhythms. In addition, online judges play an important role regarding rapid feedback, once professors are often overwhelmed with their daily activities and sometimes are not able to help each student separately.
+
+Given all these advantages, the use an online judge system is the first step of our strategy. In this paper, we use an online judge system named \textit{The Huxley}~\cite{paes2013ferramenta}. The system is available online only in portuguese at \url{http://www.thehuxley.com}. It provides a database composed by more than 300 problems and students are encouraged to use the system, once there is absolutely no penalty in case of wrong solutions. The Huxley also classifies the problems according to level of difficulty and programming topics. This allows each student to choose the next problem in accordance to these levels.
+
+%There always be great students and bad students. The great ones should be presented to challenges that make them even greater and the bad ones should be presented to a different set of problems that allow them to become better. Each programming problem of the Huxley is classified according to this level of difficulty and the programming topics it covers. This allows each student to choose the next problem in accordance with this level of expertise.
 
 % Why the Huxley and not others?
 % answer: Metrics and performance improvement (not in scope)
-In our strategy, we choose to use an online judge named \emph{The Huxley} \cite{paes2013ferramenta} to collect metrics from our students. In this system, the judge provides one of the following outputs for a submission: correct, wrong answer, time limit exceeded, compilation error, runtime error, presentation error and empty answer. We will use these outputs as the main source of metrics. This particular online judge system was chosen because it has some features that we believe will be useful to improve the overall performance of students as a future direction of this research. More specifically, the tool will support us to deal with the following problems:
-\begin{itemize}
-  \item Students only learn how to program by programming~\cite{jenkins-ltsn02}. The Huxley provides a database composed of more than 300 problems. It allows students to submit their solutions to any of these problems and they are encouraged to try once mistakes are not penalized.
-  \item Sometimes a student misses a basic concept and then cannot follow the next lecture. She believes that there is no going back; the course is behaving at a speed that she thinks she will be not able to follow. Such a student will quickly come to the view that ``they just cannot do programming'', and will attribute this to the perceived difficulty of the subject. In other words, students learn at different speeds. As the tool is available online on the Internet, each student can find its own rhythm.
-  \item Students need rapid feedback. Many professors are overwhelmed with their daily activities. Then they have no time to give feedback on every student code. On the other side, students need this feedback to continue their learning process in the right path. The Huxley provides a feedback right after a student submits her code. The feedback indicates whether the student's code produces the right answer and gives tips otherwise.
-  \item There always be great students and bad students. The great ones should be presented to challenges that make them even greater and the bad ones should be presented to a different set of problems that allow them to become better. Each programming problem of the Huxley is classified according to this level of difficulty and the programming topics it covers. This allows each student to choose the next problem in accordance with this level of expertise.
-\end{itemize}
+
+%Sometimes a student misses a basic concept and then cannot follow the next lecture. She believes that there is no going back; the course is behaving at a speed that she thinks she will be not able to follow. Such a student will quickly come to the view that ``they just cannot do programming'', and will attribute this to the perceived difficulty of the subject. In other words, students learn at different speeds. As the tool is available online on the Internet, each student can find its own rhythm.
+
+%In our strategy, we choose to use an online judge named \emph{The Huxley} \cite{paes2013ferramenta} to collect metrics from our students. In this system, the judge provides one of the following outputs for a submission: correct, wrong answer, time limit exceeded, compilation error, runtime error, presentation error and empty answer. We will use these outputs as the main source of metrics. This particular online judge system was chosen because it has some features that we believe will be useful to improve the overall performance of students as a future direction of this research. More specifically, the tool will support us to deal with the following problems:
+%\begin{itemize}
+%  \item Students only learn how to program by programming~\cite{jenkins-ltsn02}. The Huxley provides a database composed of more than 300 problems. It allows students to submit their solutions to any of these problems and they are encouraged to try once mistakes are not penalized.
+%  \item Sometimes a student misses a basic concept and then cannot follow the next lecture. She believes that there is no going back; the course is behaving at a speed that she thinks she will be not able to follow. Such a student will quickly come to the view that ``they just cannot do programming'', and will attribute this to the perceived difficulty of the subject. In other words, students learn at different speeds. As the tool is available online on the Internet, each student can find its own rhythm.
+
+%Acho que esse item nao se encaixa nesse paper.
+%  \item Students need rapid feedback. Many professors are overwhelmed with their daily activities. Then they have no time to give feedback on every student code. On the other side, students need this feedback to continue their learning process in the right path. The Huxley provides a feedback right after a student submits her code. The feedback indicates whether the student's code produces the right answer and gives tips otherwise.
+
+%  \item There always be great students and bad students. The great ones should be presented to challenges that make them even greater and the bad ones should be presented to a different set of problems that allow them to become better. Each programming problem of the Huxley is classified according to this level of difficulty and the programming topics it covers. This allows each student to choose the next problem in accordance with this level of expertise.
+%\end{itemize}
 
 \subsection{Metrics}
 
 \label{sec:metrics}
 
-We use two metrics in our strategy. We explain them in what follows:
+The second step of our strategy consists of metrics retrieval. In particular, we retrieve two metrics by using The Huxley. We explain them in what follows:
 
 \begin{itemize}
 
-	\item \textbf{Number of submissions:} this metric represents the number of submissions a student do during the course. As explained, Huxley provides more than 300 programming exercises. To solve a particular problem, a student needs to submit at least one solution.
+	\item \textbf{Number of submissions:} this metric represents the number of submissions a student do during the course. As explained, The Huxley provides more than 300 problems. To solve a particular one, a student needs to submit at least one correct solution.
 
 	\item \textbf{Number of correct submissions:} if a student solves one problem, we increase this metric by one.
 
