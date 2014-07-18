@@ -1,0 +1,104 @@
+\documentclass[review]{elsarticle}
+
+\usepackage{lineno,hyperref}
+\usepackage{color}
+\usepackage{url}
+\usepackage{subfigure}
+\usepackage{mathtools}
+\modulolinenumbers[5]
+
+\journal{Journal of \LaTeX\ Templates}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% Elsevier bibliography styles
+%%%%%%%%%%%%%%%%%%%%%%%
+%% To change the style, put a % in front of the second line of the current style and
+%% remove the % from the second line of the style you would like to use.
+%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Numbered
+%\bibliographystyle{model1-num-names}
+
+%% Numbered without titles
+%\bibliographystyle{model1a-num-names}
+
+%% Harvard
+%\bibliographystyle{model2-names.bst}\biboptions{authoryear}
+
+%% Vancouver numbered
+%\usepackage{numcompress}\bibliographystyle{model3-num-names}
+
+%% Vancouver name/year
+%\usepackage{numcompress}\bibliographystyle{model4-names}\biboptions{authoryear}
+
+%% APA style
+%\bibliographystyle{model5-names}\biboptions{authoryear}
+
+%% AMA style
+%\usepackage{numcompress}\bibliographystyle{model6-num-names}
+
+%% `Elsevier LaTeX' style
+\bibliographystyle{elsarticle-num}
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\todo}[1]{{\color{red} [#1]}}
+\newcommand{\fodo}[1]{\todo{\footnote{\todo{#1}}}}
+\newcommand{\todots}{\todo{\ldots}}
+\newcommand{\totalStudents}{227~}
+\newcommand{\hypRange}{72\%~}
+
+\begin{document}
+
+\begin{frontmatter}
+
+\title{A Strategy to Early Identify Potential Failing Students in Introductory Programming Courses}
+%\tnotetext[mytitlenote]{Fully documented templates are available in the elsarticle package on \href{http://www.ctan.org/tex-archive/macros/latex/contrib/elsarticle}{CTAN}.}
+
+%% Group authors per affiliation:
+%\author{M\'{a}rcio Ribeiro}
+%\address{Radarweg 29, Amsterdam}
+
+%% or include affiliations in footnotes:
+\author[ufal]{M\'{a}rcio Ribeiro}
+\ead{marcio@ic.ufal.br}
+
+\author[ufal]{Rodrigo Paes\corref{mycorrespondingauthor}}
+\cortext[mycorrespondingauthor]{Corresponding author}
+\ead{rodrigo@ic.ufal.br}
+
+\author[ufcg]{Rohit Gheyi}
+\ead{rohit@dsc.ufcg.edu.br}
+
+\address[ufal]{Federal University of Alagoas, Macei\'{o}, Brazil}
+\address[ufcg]{Federal University of Campina Grande, Campina Grande, Brazil}
+
+\begin{abstract}
+The high rate of failing students in introductory programming courses is a common problem. In this context, previous work revealed data and reasons about why students fail the courses. Despite these advances, there is a lack of an approach to identify, during the course, that a particular set of students will fail. By having this set, professors and mentors would have time to act and potentially avoid such failings. This way, this paper proposes a strategy to early identify failing students during introductory programming courses. We apply our strategy considering the first 30 days of the course. To evaluate our strategy, we conduct an empirical study regarding 7 courses (3.5 years in total). The study reveals that our strategy successfully identifies 72\% of the failing students with 95\% standard confidence level.
+\end{abstract}
+
+\begin{keyword}
+Programming courses, clustering
+\MSC[2010] 00-01\sep  99-00
+\end{keyword}
+
+\end{frontmatter}
+
+\linenumbers
+
+\input{sections/introduction.tex}
+
+\input{sections/problem.tex}
+
+\input{sections/strategy.tex}
+
+\input{sections/evaluation.tex}
+
+\input{sections/related.tex}
+
+\input{sections/concluding.tex}
+
+%\section*{References}
+
+\bibliography{mybibfile}
+
+\end{document} 

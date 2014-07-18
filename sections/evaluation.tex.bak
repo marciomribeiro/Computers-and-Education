@@ -55,7 +55,7 @@ Figure~\ref{fig:procedure} illustrates how we perform our evaluation. The result
 
 \begin{figure}[htb]
 \centering
-\includegraphics[width=1.0\textwidth,natwidth=950,natheight=394]{images/Procedure.pdf}
+\includegraphics[width=1.0\textwidth]{images/Procedure.pdf}
 \caption{Checking the strategy results against the actual grades.}
 \label{fig:procedure}
 \end{figure}
@@ -118,31 +118,31 @@ When considering two groups, we set the strategy to consider all students in two
 \begin{figure*}[ht]
      \begin{center}
          \subfigure[2010.02] {
-             \includegraphics[scale=0.21,natwidth=480,natheight=480]{images/2-2010-02.png}
+             \includegraphics[scale=0.21]{images/2-2010-02.png}
              \label{fig:2-2010-02}
          }
          \subfigure[2011.01] {
-             \includegraphics[scale=0.21,natwidth=480,natheight=480]{images/2-2011-01.png}
+             \includegraphics[scale=0.21]{images/2-2011-01.png}
              \label{fig:2-2011-01}
          }
          \subfigure[2011.02] {
-             \includegraphics[scale=0.21,natwidth=480,natheight=480]{images/2-2011-02.png}
+             \includegraphics[scale=0.21]{images/2-2011-02.png}
              \label{fig:2-2011-02}
          }
          \subfigure[2012.01] {
-             \includegraphics[scale=0.21,natwidth=480,natheight=480]{images/2-2012-01.png}
+             \includegraphics[scale=0.21]{images/2-2012-01.png}
              \label{fig:2-2012-01}
          }
          \subfigure[2012.02] {
-             \includegraphics[scale=0.21,natwidth=480,natheight=480]{images/2-2012-02.png}
+             \includegraphics[scale=0.21]{images/2-2012-02.png}
              \label{fig:2-2012-02}
          }
          \subfigure[2013.01] {
-             \includegraphics[scale=0.21,natwidth=480,natheight=480]{images/2-2013-01.png}
+             \includegraphics[scale=0.21]{images/2-2013-01.png}
              \label{fig:2-2013-01}
          }
          \subfigure[2013.02] {
-             \includegraphics[scale=0.21,natwidth=480,natheight=480]{images/2-2013-02.png}
+             \includegraphics[scale=0.21]{images/2-2013-02.png}
              \label{fig:2-2013-02}
          }
      \end{center}
@@ -176,31 +176,31 @@ Analogously, we set our strategy to consider three groups. Here, besides the fai
 \begin{figure*}[h]
      \begin{center}
          \subfigure[2010.02] {
-             \includegraphics[scale=0.21,natwidth=480,natheight=480]{images/3-2010-02.png}
+             \includegraphics[scale=0.21]{images/3-2010-02.png}
              \label{fig:3-2010-02}
          }
          \subfigure[2011.01] {
-             \includegraphics[scale=0.21,natwidth=480,natheight=480]{images/3-2011-01.png}
+             \includegraphics[scale=0.21]{images/3-2011-01.png}
              \label{fig:3-2011-01}
          }
          \subfigure[2011.02] {
-             \includegraphics[scale=0.21,natwidth=480,natheight=480]{images/3-2011-02.png}
+             \includegraphics[scale=0.21]{images/3-2011-02.png}
              \label{fig:3-2011-02}
          }
          \subfigure[2012.01] {
-             \includegraphics[scale=0.21,natwidth=480,natheight=480]{images/3-2012-01.png}
+             \includegraphics[scale=0.21]{images/3-2012-01.png}
              \label{fig:3-2012-01}
          }
          \subfigure[2012.02] {
-             \includegraphics[scale=0.21,natwidth=480,natheight=480]{images/3-2012-02.png}
+             \includegraphics[scale=0.21]{images/3-2012-02.png}
              \label{fig:3-2012-02}
          }
          \subfigure[2013.01] {
-             \includegraphics[scale=0.21,natwidth=480,natheight=480]{images/3-2013-01.png}
+             \includegraphics[scale=0.21]{images/3-2013-01.png}
              \label{fig:3-2013-01}
          }
          \subfigure[2013.02] {
-             \includegraphics[scale=0.21,natwidth=480,natheight=480]{images/3-2013-02.png}
+             \includegraphics[scale=0.21]{images/3-2013-02.png}
              \label{fig:3-2013-02}
          }
      \end{center}
@@ -257,4 +257,4 @@ When applying our strategy considering two groups, the results indicate a low pr
 
 	\item \todo{1 professor?}
 
-\end{itemize} 
+\end{itemize}
