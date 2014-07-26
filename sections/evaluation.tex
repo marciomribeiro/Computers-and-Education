@@ -99,7 +99,7 @@ $$
 
 Our strategy pointed two out of three students as failed ones and they indeed failed. Therefore, we have 67\% of accuracy when identifying potential failing students, raising one false positive. On the other hand, only two out of four students have been pointed as failed ones. This means that the strategy was not able to identify all failing students, raising two false negatives.
 
-Last but not least, after confronting the strategy results with the academic system and summarizing precision and recall, we apply a statistical test to check for significance. Here, we rely on the proportion statistical test based on the Bernoulli distribution~\cite{} so that we have a binary distribution: fail or pass.
+Last but not least, after confronting the strategy results with the academic system and summarizing precision and recall, we apply a statistical test to check for significance. Here, we rely on the proportion statistical test based on the Bernoulli distribution~\cite{} so that we have a binary distribution: fail or pass. In this paper, we follow the convention of considering a factor as being significant to the response variable when \textit{p-value} $< 0.05$~\cite{}.
 
 \section{Results and Discussion}
 
@@ -111,9 +111,7 @@ In our evaluation, we use data of 7 courses (3.5 years) totalling \totalStudents
 
 \subsubsection{Two groups}
 
-When considering two groups, we set the strategy to consider all students in two categories: fail or pass. Figure~\ref{fig:2-groups} illustrates the results for all courses. Notice that Figure~\ref{fig:2-2011-01} contains an outlier. In this particular case, the strategy pointed that all students but one would fail the course. Clearly this result is a consequence of such outlier. There are strategies to remove outliers.
-
-%This way, this represents a disadvantage of using two groups.
+When considering two groups, we set the strategy to consider all students in two categories: fail or pass. Figure~\ref{fig:2-groups} illustrates the results for all courses. Notice that Figure~\ref{fig:2-2011-01} contains an outlier. In this particular case, the strategy pointed that all students but one would fail the course. Clearly this result is a consequence of such outlier. This way, the presence of one outlier might represent a problem when considering two groups.
 
 \begin{figure*}[ht]
      \begin{center}
@@ -167,11 +165,11 @@ $$
 \end{minipage}
 \vspace{0.2cm}
 
-Besides these disadvantages, our strategy is susceptible to blablabla, raising outliers.
+Here we observe a high recall, i.e., 80\%. This means we only miss 20\% of the failing students. We have few false negatives, but this result says nothing about how many false positives (irrelevant students) we retrieved. Notice that this result (80\%) represents our particular sample. We now need to find the population proportion, enabling us to generalize our findings. To do so, we need to check for statistical significance by executing the proportion hypothesis test. In this context, the test reveals that the population recall is at most 73\% with a confidence level of 95\% (\textit{p-value} $= 0.045$). Regarding precision, our results show a sample precision of 63\%. To generalize, we again execute the test and find that the population precision would be at most 56\% (\textit{p-value} $= 0.035$).
 
 \subsubsection{Three groups}
 
-Analogously, we set our strategy to consider three groups. Here, besides the failing and passing groups, there is one extra group where the strategy cannot conclude anything about it. Figure~\ref{fig:3-groups} shows the results for three groups. Differently from two groups, here outliers do not compromise the strategy.
+Analogously, we set our strategy to consider three groups. Here, besides the failing and passing groups, there is one extra group where the strategy cannot conclude anything about it. Figure~\ref{fig:3-groups} shows the results for three groups. Differently from two groups, here one outlier does not completely compromise the strategy.
 
 \begin{figure*}[h]
      \begin{center}
@@ -225,36 +223,48 @@ $$
 \end{minipage}
 \vspace{0.2cm}
 
-\begin{itemize}
-
-	\item \todo{Caralho, que negocio louco da porra. Com 2 grupos, temos 63 e 80. Com 3 grupos e exatamente o contrario, precision com 80 e recall com 63.}
-
-	\item \todo{Falar sobre os resultados do teste de hipotese}
-
-	\item \todo{Olhar se, para os alunos onde o algoritmo errou, eles foram pra prova final. Para tres grupos, alguma relacao com o grupo do meio?}
-
-\end{itemize}
+Now the strategy returns a precision of 80\% for the sample proportion. To generalize our results, we again execute the proportion hypothesis test. Regarding the population, our results reveal that the precision would be at most 72\% with a confidence level of 95\%. In other words, after 30 days, we can identify with statistical significance (\textit{p-value} $= 0.04$) 72\% of the students that indeed will fail the course. We repeat this process for recall and find 63\% for the sample and 55\% for the population, \textit{p-value} $= 0.033$.
 
 \subsection{Discussion}
 
 In this section we discuss the results. We first focus on the results for two groups and then we discuss the results for three groups.
 
-When applying our strategy considering two groups, the results indicate a low precision. This means that the strategy yields many false positives, i.e., the strategy indicates that many students would fail but in fact they did not. In addition, the results indicate a high recall. Our interpretation is that the strategy is returning too many students \todots
+\subsubsection{Two or Three Groups?}
+
+When applying our strategy considering two groups, the results indicate a high recall. This means that the strategy can identify the majority of the failing students (raising only few false negatives). Although this is an interesting result, the strategy with two groups yields many false positives. In fact, the precision is low, i.e., the retrieved set contains many students that passed. In this situation, professors and mentors waste effort to recover students that actually do not need recovering. On the other hand, with three groups we have a high precision, which means professors should give special attention to these students, since 72\% of them tend to fail. Nevertheless, since the recall is low, there are many failing students not retrieved by the strategy.
+
+In this context, the number of groups choice seems to depend on the professors priorities and resources. In case the professor has available time and additional mentors to help her, she can probably use two groups, which consists of a more complete retrieved set (the recall is high), even though it contains many false positives. However, it is important to notice that applying the strategy with two groups is more likely to outliers problems.
+
+On the other hand, if the professor wants to avoid false positives because of situations like no available time or few mentors to help, she might prefer to use three groups, despite being aware of potential failing students not retrieved by the strategy (many false negatives, low recall). 
+
+%better precision in exchange for 
+
+\todo{Falar dos 28\%}
+
+\todo{Tem que focar no 72? Lembrar que ele esta espalhado em todo o texto...}
 
 \begin{itemize}
 
-	\item \todo{3 grupos: Voce realmente deve prestar atencao nos alunos que ela retornou, pq ela acerta com 72\% de certeza. Mas devemos tambem ficar atentos, pois ela deixa muita gente de fora, pois a certeza do recall é de apenas 55\%}
-	\item \todo{2 grupos: Ela erra muito, pois o precision foi muito baixo. Embora o recall tenha sido alto, isso significa que a estrategia esta retornando gente demais, incluindo os que deveriam retornar.}
-	\item \todo{Sendo assim, acho que para o professor a estrategia com 3 grupos e mais util, pois ele podera focar naquele subconjunto que a certeza de estarem com problemas realmente e grande.}
-	\item \todo{Discutir os resultados em relacao a prova final. Ainda nao computamos isso. Mais alguma outra coisa neste sentido que poderiamos computar?}
+	%\item \todo{3 grupos: Voce realmente deve prestar atencao nos alunos que ela retornou, pq ela acerta com 72\% de certeza. Mas devemos tambem ficar atentos, pois ela deixa muita gente de fora, pois a certeza do recall é de apenas 55\%}
+	%\item \todo{2 grupos: Ela erra muito, pois o precision foi muito baixo. Embora o recall tenha sido alto, isso significa que a estrategia esta retornando gente demais, incluindo os que deveriam retornar.}
+	%\item \todo{Sendo assim, acho que para o professor a estrategia com 3 grupos e mais util, pois ele podera focar naquele subconjunto que a certeza de estarem com problemas realmente e grande.}
+	%\item \todo{Discutir os resultados em relacao a prova final. Ainda nao computamos isso. Mais alguma outra coisa neste sentido que poderiamos computar?}
 	\item \todo{Estou achando que a carne do paper esta pouco gorda (O Ig me falou que o journal e bem top). Pra incrementar, poderiamos entrevistar os alunos que perderam. Tipo: ``se voce tivesse altos numeros de submissoes e submissoes corretas, voce acha que passaria?"}
+
+	\item \todo{Com 2 grupos, temos 63 e 80. Com 3 grupos e exatamente o contrario, precision com 80 e recall com 63. Sao duas rodadas independentes. Foi coincidencia. Because k-means is random, the results might be slightly different}
+
+	%\item \todo{Olhar se, para os alunos onde o algoritmo errou, eles foram pra prova final. Para tres grupos, alguma relacao com o grupo do meio? Se todos os alunos tiverem la, pode ser uma boa olhar o grupo do meio.}
 
 \end{itemize}
 
+\subsubsection{Extra Exams}
+
+In this section we intend to report that the false positives our strategy finds are still important. The students passed the course but our strategy pointed them as failing ones in the first 30 days.
+
+To better understand these false positives, we analyzed their grades at the academic system. In our study, we found that around half of these students (in both number of groups configurations, two and three) did not pass in the first place. They either needed one extra exam or even two\footnote{At our universities we name the second extra exam as final exam.} extra exams to pass. Moreover, some of them finished (\todo{olhar as colunas O e P da planilha}) the course with the minimum possible grade. This result is relevant in the sense that, although the strategy might raise false positives, it seems worth to follow these students as well. Professors and mentors can also give special attention to these students, which may improve their learning process and lead to better grades.
+
 \subsection{Threats to validity}
 
-\begin{itemize}
+In this section we present the threats to validity of our study.
 
-	\item \todo{1 professor?}
-
-\end{itemize} 
+Although our sample is reasonably big (227 students), our study has homogeneities that might pose threats. First, 
