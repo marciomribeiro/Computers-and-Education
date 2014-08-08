@@ -2,7 +2,7 @@
 
 \label{sec:strategy}
 
-Identifying potential failing students early is very important in the sense that professors still have enough time to act and avoid students to fail the course. In this paper, we focus exclusively on identifying these students. Providing and reporting a technique useful to reduce the failure rate is outside the scope of this paper. Nevertheless, notice that when identifying these students and learning the cause of the failings, we can provide a technique to reduce the aforementioned rate. In fact, based on the results of this paper, we intend to propose a technique to reduce the failure rate as future work.
+Identifying potential failing students early is very important in the sense that professors still have enough time to act and avoid students to fail the course. In case professors act based on the results of our strategy, we can indirectly help on reducing the high rate of failing students. However, in this paper, we focus exclusively on identifying these students. This way, evaluating and reporting the rate after applying our strategy is outside the scope of this paper.
 
 Next, we detail our strategy to identify these students.
 
@@ -11,13 +11,13 @@ Next, we detail our strategy to identify these students.
 % Answer: We need metrics. In order to discover how students are performing, it is necessary a close monitoring of students behaviour
 % Talk about Huxley, only enough to explain the metrics: submissions and submission_status (Correct ...)
 
-To assess the students performance during a course, it is important to closely monitor them. In this context, metrics represent an alternative to measure their performance. However, retrieving metrics regarding each student is a difficult and time-consuming task. To minimize this problem, one might rely on online learning tools, since these systems are not only a source for these metrics, but also allow their automatic retrieval. 
+To assess the students performance during a course, it is important to closely monitor them. In this context, metrics represent an alternative to measure their performance. However, retrieving metrics regarding each student is a difficult and time-consuming task. To minimize this problem, one might rely on online learning tools, since these systems are not only a source for these metrics, but allow their automatic retrieval. 
 
-A popular category of this kind of system is the online judges. These systems provide a set of programming problems so that students can submit their solutions. After submitting, the online judge executes the solution against a set of predefined test cases. In case the solution passes over all the tests, the system evaluates the solution as correct. Otherwise, the system evaluates the solution according to the type of the error (e.g., wrong answer, compilation error, time limit exceeded, runtime error, etc) and even might give important tips so that students can successfully solve the problem.
+A popular category of this kind of system is the online judges. These systems provide a set of programming problems so that students can submit their solutions. After submitting, the online judge executes the solution against a set of predefined test cases. In case the solution passes over all the tests, the system evaluates the solution as correct. Otherwise, the system evaluates the solution according to the error type (e.g., wrong answer, compilation error, time limit exceeded, runtime error, etc) and even might give important tips so that students can successfully solve the problem.
 
 Since students only learn how to program by programming~\cite{jenkins-ltsn02}, the online judges consists of an important environment in the sense students can practice and improve their learning process. Also, as the tool is available online, students can find their own rhythms. In addition, online judges play an important role regarding rapid feedback, once professors are often overwhelmed with their daily activities and sometimes are not able to help each student separately.
 
-Given all these advantages, the use an online judge system is the first step of our strategy. In this paper, we use an online judge system named \textit{The Huxley}~\cite{paes2013ferramenta}. The system is available online only in portuguese at \url{http://www.thehuxley.com}. It provides a database composed by more than 300 problems and students are encouraged to use the system, once there is absolutely no penalty in case of wrong solutions. The Huxley also classifies the problems according to level of difficulty and programming topics. This allows each student to choose the next problem in accordance to these levels.
+Given all these advantages, the use an online judge system is the first step of our strategy. In this paper, we use an online judge system named \textit{Huxley}~\cite{paes2013ferramenta}. The system is available online only in portuguese at \url{http://www.thehuxley.com}. It provides a database composed by more than 300 problems and students are encouraged to use the system, once there is absolutely no penalty in case of wrong solutions. Huxley also classifies the problems according to level of difficulty and programming topics. This allows the students to choose the next problem in accordance to their corresponding levels.
 
 %There always be great students and bad students. The great ones should be presented to challenges that make them even greater and the bad ones should be presented to a different set of problems that allow them to become better. Each programming problem of the Huxley is classified according to this level of difficulty and the programming topics it covers. This allows each student to choose the next problem in accordance with this level of expertise.
 
@@ -41,31 +41,31 @@ Given all these advantages, the use an online judge system is the first step of 
 
 \label{sec:metrics}
 
-The second step of our strategy consists of metrics retrieval. In particular, we retrieve two metrics by using The Huxley. We explain them in what follows:
+The second step of our strategy consists of metrics retrieval. In particular, we retrieve two metrics by using Huxley. We explain them in what follows:
 
 \begin{itemize}
 
-	\item \textbf{Number of submissions:} this metric represents the number of submissions a student do during the course. As explained, The Huxley provides more than 300 problems. To solve a particular one, a student needs to submit at least one correct solution.
+	\item \textbf{Number of submissions:} this metric represents the number of submissions a student do during the course. As explained, Huxley provides more than 300 problems. To solve a particular one, a student needs to submit at least one correct solution.
 
 	\item \textbf{Number of correct submissions:} if a student solves one problem, we increase this metric by one.
 
 \end{itemize}
 
-Depending on the level of difficulty of a problem, students may submit several times to solve it. However, notice that this is not necessarily a bad thing regarding the learning process. For example, submitting many times means that students are somehow practicing and studying continuously. Thus, although she is not hitting a right solution, she is trying hard and will eventually hit one. Thus, the number of submissions metric is a good indicator of the amount of practice, which is frequently associated with the level of engaging and learning. However, when considered isolated, a high number of submission may also mean that the student is getting frustrated due to so many wrong answers she receives. This way, we also consider the number of correct submissions to compensate and help us on studying such cases as well.
+Depending on the level of difficulty of a problem, students may submit several times to solve it. However, notice that this is not necessarily a bad thing regarding the learning process. For example, submitting many times means that students are somehow practicing and studying continuously. Thus, although she is not hitting a right solution, she is trying hard and will eventually hit one. Thus, the number of submissions metric is a good indicator of the amount of practice, which is frequently associated with the level of engaging and learning. However, when considered isolated, a high number of submissions may also mean that the student is getting frustrated due to so many wrong answers she receives. This way, we also consider the number of correct submissions to compensate and help us on studying such cases as well.
 
 \todo{Referencia do Ig pode ajudar a responder porque as metricas sao boas.}
 
 \subsection{Clustering algorithm}
 
-To identify potential failing students, we use a clustering algorithm to define groups of students. Our idea consists of identifying different groups of students so that we can clearly separate students susceptible to fail from the other ones. To compute the groups, the algorithm takes into account the metrics we present in Section~\ref{sec:metrics}. To make the strategy parameterizable in terms of number of groups, we use the well-known clustering algorithm k-means~\cite{}, which takes such a number as input.
+To identify potential failing students, we use a clustering algorithm to define groups of students. Our idea consists of identifying different groups of students so we can clearly separate students susceptible to fail from the other ones. To compute the groups, the algorithm takes into account the metrics we present in Section~\ref{sec:metrics}. To make the strategy parameterizable in terms of number of groups, we use the well-known clustering algorithm k-means~\cite{}, which takes such a number as input.
 
-Notice that the number of groups plays an important role on identifying potential failing students. In this paper, we set the algorithm to compute two and three groups and evaluate both cases. When considering two groups, we define them as the students who will either fail or pass. For three groups, we have fail, pass, and students in which the strategy cannot conclude anything about them, which we name ``inconclusive." This is reasonable since our study focuses on the very first 30 days, which means that our drawings regarding the inconclusive group might be completely wrong: these students can either improve themselves and pass the course or fail due to several reasons.
+Notice that the number of groups plays an important role on identifying potential failing students. In this paper, we set the algorithm to compute two and three groups and evaluate both cases. For two groups, we have students who will either fail or pass. For three groups, we have fail, pass, and students in which the strategy will not conclude anything about them, which we name ``inconclusive.'' This is reasonable since our study focuses on the very first 30 days, which means our drawings regarding the inconclusive group might be completely wrong: these students can either improve themselves and pass the course or fail due to several reasons.
 
-We focus on two and three groups because (i) using one group is useless; and (ii) more than three may lead the strategy to define many groups where it cannot conclude anything. By using three, we have only one group where this happens. \todo{Nao tenho certeza se precisamos explicar isso.}
+We focus on two and three groups basically for two reasons: (i) using one group is useless; and (ii) more than three only brings more inconclusive groups to the table which, given our context, is pretty much the same of having only one inconclusive group.
 
 \subsection{Summary}
 
-Figure~\ref{fig:strategy} combines all steps of our strategy. As the classes are happening, students are encouraged to solve the problems available at Huxley. Although solving exercises is not mandatory, there some particular activities where the professor forces students to use Huxley, such as formal exams. Next, we collect the metrics we detail in Section~\ref{sec:metrics}. To identify potential failing students \textit{early}, we collect the metrics for the first 30 days of the introductory programming courses. Then, we execute the k-means clustering algorithm.
+Figure~\ref{fig:strategy} combines all steps of our strategy. As the classes are happening, we encourage students to solve the problems available at Huxley. Although solving exercises is not mandatory, there are some particular activities where the professor forces students to use Huxley, such as formal exams. Next, we collect the metrics we detail in Section~\ref{sec:metrics}. To identify potential failing students \textit{early}, we collect the metrics for the first 30 days of the introductory programming courses. Then, we execute the k-means clustering algorithm.
 
 \begin{figure}[htb]
 \centering
