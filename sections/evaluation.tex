@@ -167,7 +167,7 @@ $$
 \end{minipage}
 \vspace{0.2cm}
 
-Here we observe a high recall, i.e., 80\%. This means we only miss 20\% of the failing students. We have few false negatives, but this result says nothing about how many false positives (irrelevant students) we retrieved. Notice that this result (80\%) represents our particular sample. We now need to find the population proportion, enabling us to generalize our findings. To do so, we need to check for statistical significance by executing the proportion hypothesis test. In this context, the test reveals that the population recall is 73\% with a confidence level of 95\% (\textit{p-value} $= 0.045$). Regarding precision, our results show a sample precision of 63\%. To generalize, we again execute the test and find that the population precision would be 56\% (\textit{p-value} $= 0.035$).
+Here we observe a high recall, i.e., 80\%. This means we only miss 20\% of the failing students. We have few false negatives, but this result says nothing about how many false positives (irrelevant students) we retrieved. However, notice that this result (80\%) represents our particular sample. We now need to find the population proportion, enabling us to generalize our findings. To do so, we need to check for statistical significance by executing the proportion hypothesis test. In this context, the test reveals that the population recall is 73\% with a confidence level of 95\% (\textit{p-value} $= 0.045$). Regarding precision, our results show a sample precision of 63\%. To generalize, we again execute the test and find that the population precision would be 56\% (\textit{p-value} $= 0.035$).
 
 \subsubsection{Three groups}
 
@@ -225,23 +225,23 @@ $$
 \end{minipage}
 \vspace{0.2cm}
 
-Now the strategy returns a precision of 80\% for the sample proportion. To generalize our results, we again execute the proportion hypothesis test. Regarding the population, our results reveal that the precision would be 72\% with a confidence level of 95\%. In other words, after 30 days, we can identify with statistical significance (\textit{p-value} $= 0.04$) 72\% of the students that indeed will fail the course. We repeat this process for recall and find 63\% for the sample and 55\% for the population, \textit{p-value} $= 0.033$.
+Now the strategy returns a precision of 80\% for the sample proportion. To generalize our results, we again execute the proportion hypothesis test. Regarding the population, our results reveal that the precision is 72\% with a confidence level of 95\%. In other words, from the set we retrieve,  we can identify with statistical significance (\textit{p-value} $= 0.04$) 72\% of the students that indeed will fail the course after 30 days. We repeat this process for recall and find 63\% for the sample and 55\% for the population, \textit{p-value} $= 0.033$.
 
 Notice that with three groups the results of precision and recall are inverted when compared to two groups. Our strategy uses k-means, which takes into account two metrics---number of submissions and number of correct submissions---and the number of groups. Both executions are totally independent and the algorithm is not aware of precision, recall, and the academic system. Therefore, we take these results as a coincidence.
 
 \subsection{Discussion}
 
-In this section we discuss the results. We first discuss the number of groups
-
-focus on the results for two groups and then we discuss the results for three groups.
+In this section we discuss the results. We first discuss the number of groups we should set when using our strategy and then we discuss our achievements regarding final exams.
 
 \subsubsection{Two or Three Groups?}
 
-When applying our strategy considering two groups, the results indicate a high recall. This means that the strategy can identify the majority of the failing students (raising only few false negatives). Although this is an interesting result, the strategy with two groups yields many false positives. In fact, the precision is low, i.e., the retrieved set contains many students that passed). In this situation, professors and assistants might waste effort trying to recover students that actually do not need recovering. On the other hand, with three groups we have a high precision, which means professors should give special attention to these students, since 72\% of them tend to fail. Nevertheless, since the recall is low, there are many failing students not retrieved by the strategy.
+When applying our strategy considering two groups, the results indicate a higher recall when compared to three groups. This means that the strategy can identify the majority of the failing students (raising only few false negatives). Although this is an interesting result, the strategy with two groups yields many false positives. In fact, the precision is lower when compared to three groups, i.e., the set we retrieve contains many students that pass. In this situation, professors and assistants might waste effort trying to recover students that actually do not need recovering. On the other hand, with three groups we have a higher precision, which means professors should give special attention to the students the strategy retrieves, since 72\% of them tend to fail. Nevertheless, since the recall is lower than with two groups, we have more failing students not retrieved by the strategy for three groups.
 
-In this context, setting the number of groups to execute our strategy seems to depend on the professors priorities and resources. In case the professor has available time and additional assistants to help her, she can probably use two groups, which consists of a more complete retrieved set (the recall is high), even though it contains many false positives. However, it is important to notice that applying the strategy with two groups is more likely to outliers problems.
+%we may have there are many failing students not retrieved by the strategy.
 
-On the other hand, if the professor wants to avoid false positives because of situations like no available time or few assistants to help, she might prefer to use three groups, despite being aware of potential failing students not retrieved by the strategy (many false negatives, low recall). 
+In this context, setting the number of groups to execute our strategy seems to depend on the professors priorities and resources. In case the professor has available time and additional assistants to help her, she can probably use two groups, which consists of a more complete retrieved set (the recall is higher for two groups), even though it contains many false positives. However, notice that applying the strategy with two groups is more likely to outliers problems, such the one we depict in Figure~\ref{fig:2-2011-01}.
+
+On the other hand, if the professor wants to avoid false positives because of no available time or few assistants to help, she might prefer to use three groups, despite being aware of potential failing students not retrieved by the strategy (many false negatives, lower recall than with two groups). 
 
 %better precision in exchange for 
 
@@ -263,11 +263,13 @@ Even though the strategy pointed students as potential failing ones in the first
 
 To better understand these false positives, we now analyze their grades at the academic system. In our study, we find that some of these students did not pass in the first place. In fact, they needed to perform the final exam to pass. At the university we focus on this paper, the final exam represents a second chance and is only available to students with not enough grades to pass.
 
-This result is important in the sense that, although the strategy might raise false positives, it seems worth to follow these students as well. We find that at least 1/3 of them will need help (regardless of the number of groups, two or three), otherwise they reach the final exams. This way, professors and assistants can also give special attention to these students, which may improve their learning process, avoid final exams, and lead to better grades.
+This result is important in the sense that, although the strategy might raise false positives, it seems worth to follow these students as well. We find that at least 33\% of them need help (regardless of the number of groups, two or three), otherwise they reach the final exams. This way, professors and assistants can also give special attention to these students, which may improve their learning process, avoid final exams, and lead to better grades.
 
 \subsubsection{Back to our objective}
 
-As mentioned, the objective of our study is ``to evaluate to what extent our strategy is capable of identifying potential failing students in only 30 days.'' Given the results we achieve, we believe our strategy is indeed capable of identifying the failing students early. In particular, from the group of students our strategy points as ``likely to fail'' by using three groups, it hits 72\% of students that indeed fail with 95\% standard confidence level. Also, we notice that the 28\% remaining contains at least 33\% of students that somehow need help, since they reach the final exam.
+As mentioned, the objective of our study is ``to evaluate to what extent our strategy is capable of identifying potential failing students in only 30 days.'' Given the results we achieve, we believe our strategy is indeed capable of identifying the failing students early. In particular, from the group of students our strategy points as ``likely to fail,'' 72\% of the students indeed fail with 95\% standard confidence level by using three groups. 
+
+%Also, we notice that the 28\% remaining contains at least 33\% of students that somehow need help, since they reach the final exam.
 
 \subsection{Threats to validity}
 
