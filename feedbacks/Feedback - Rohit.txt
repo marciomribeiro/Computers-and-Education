@@ -1,0 +1,41 @@
+- Entender melhor o escopo
+- Quem vai usar? Qualquer tipo linguagem? Qualquer freshman?
+- Destacar a importância do porque é early (vender mais... por que identificar é importante? por que identificar é difícil? CACM)
+- Semestre: 30 dias (15%): deixar mais claro
+- Com base nisso, o cara pode agir;
+- Qual a relevância do problema? X% dos caras falham (pegar numeros em papers relacionados).
+- Pegar os números de fail do nosso instituto
+- Discussion: pode diminuir o rate...
+- 15 alunos, o problema é igual? 30 alunos o problema pode ocorrer! Em turmas pequenas, o proprio professor identifica
+- Instituicoes com 90 100 alunos, é complicado identificar... eu preciso do suporte
+- Huxley: deixar mais claro o papel da ferramenta.
+- Com minitestes eu ja nao identificaria? Como foi utilizado? Prova obrigatoria? Como os exercícios são aplicados?
+- Posso usar outro online judge? Deixar mais geral, citar outros e dizer que instanciamos o Huxley.
+- Discutir sobre 60, 90 e 120 dias?
+- Fiz uma prova nos 30 dias, quem tirou nota ruim, vai perder. Qual a diferença disso pra estratégia?
+	- Só uma prova, não haveria muito feedback. Dia ruim?
+	- Vários minitestes, há uma avaliação constante; a quantidade de dados e feedback é muito maior!
+- O curso cobra o número de submissions?
+- Fechar o escopo: qual a interface que devo utilizar como professor pra seguir a estratégia?
+- O que foi feito no curso? Foi tudo igual em todos os cursos?
+- Descrever melhor como foram os 7 semestres. Foi o mesmo professor. Quantas submissões... Linguagem C, P1...
+
+==========================
+- Relevar mais o problema: pegar dados de outros artigos; dos nossos cursos também
+
+- Solução: tentar fechar o nicho, dar um pouco mais de detalhes sobre o quão geral a estratégia é,
+principalmente no online judge system; Abordagem mais geral? Como eu devo utilizar a abordagem?
+Tanto faz: muitos exercícios ou só uma prova?
+
+- Discutir mais alguns pontos na avaliação: tamanho da turma é relevante? Para a técnica tanto faz?
+Discutir um pouco mais após os 30 dias? Vai ficar com os olhos fechados durante os 30 dias?
+Eu tenho a estratégia. Qual o grande diferencial dela pra o que já existe? Qual o suporte adicional que ele nos traz?
+
+- Caracterizar os problemas, nível de dificuldade, dar exemplos. Problemas para iniciantes.
+Rohit achou muito abstrato como replicar na disciplina dele. O que ele pode variar, o que é específico, quais as diretrizes seguir.
+
+- Pegar trabalhos que usam python. Será que tem muito dropout também?
+
+- Destacar a importância do online judge: muitos exercícios pra corrigir
+
+- No Brasil, várias TURMAS e vários ALUNOS!
