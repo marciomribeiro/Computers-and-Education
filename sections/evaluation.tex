@@ -2,7 +2,7 @@
 
 \label{sec:evaluation}
 
-To evaluate our strategy, in this section we present the empirical study we conduct. The objective of this study is to evaluate to what extent our strategy is capable of identifying potential failing students in only 30 days. To explain our evaluation design, we first present the participants and material in Section~\ref{sec:participants}. Then, we detail the procedure we use during the evaluation in Section~\ref{sec:procedure}.
+To evaluate our strategy, in this section we present the empirical study we conduct. The objective of this study is to evaluate to what extent our strategy is capable of identifying potential failing students in only 30 days. To explain our evaluation design, we first present the general settings in Section~\ref{sec:participants}. Then, we detail the procedure we use during the evaluation in Section~\ref{sec:procedure}.
 
 %Before explaining our study, we first introduce the terminology we use throughout this paper. In particular, we define in what follows four categories: abort, skip, fail, and pass.
 %
@@ -23,11 +23,11 @@ To evaluate our strategy, in this section we present the empirical study we cond
 
 %The objective of this study is to evaluate to what extent our strategy is capable of identifying potential failing students. This way, based on this objective, our hypothesis is the following: In the first 30 days, students with lower number of submissions and correct submissions tend to fail the course.
 
-\subsection{Participants and Material}
+\subsection{Settings}
 
 \label{sec:participants}
 
-The participants of our study are students of introductory programming courses at the Federal University of Alagoas, Brazil. We ministered these courses during 3.5 years and collected the metrics we detail in Section~\ref{sec:metrics} of each student by using Huxley. The professor encouraged all students to use Huxley to practice by solving the available problems. The use of Huxley was mandatory only during formal exams. Table~\ref{tab:participants} distribute the number of participants per semester.
+The participants of our study are freshman students of introductory programming courses at the Federal University of Alagoas, Brazil. We ministered these courses during 3.5 years and collected the metrics we detail in Section~\ref{sec:metrics} of each student by using Huxley. Table~\ref{tab:participants} distributes the number of participants per semester.
 
 \begin{table}[h]
 \centering
@@ -47,13 +47,17 @@ The participants of our study are students of introductory programming courses a
 \label{tab:participants}
 \end{table}
 
-The material of this study consists of almost 300 programming exercises in Huxley. They were available for all students of all courses we use in this paper.
+The same professor taught the 7 semesters. The classes happened in a lab and some exercises available in Huxley were solved during the class. The professor strongly encouraged all students to submit solutions for the problems available in Huxley during extra-class activities, once there is absolutely no penalty in case of wrong submitted solutions. However, during the first 30 days, the use of Huxley was mandatory for approximately 6 exercises (used as a small percentage of the final grade) and for the first formal exam (held closely to the 30th day).
 
-\todo{Descrever: quantas submissoes; linguagem C; mesmo professor; quantos problemas? focar somente nos 30 dias? Teve prova nos 30 dias?}
+The programming language was C and the program curriculum for the first 30 days was the following: \textit{introduction to algorithms; hello world in C; variables; identifiers; constants; basic structure of a C program; input/output; operators; data types; assignments; and conditional structures}.
 
-\todo{Colocar um exemplo de problema. Print screen da tela do huxley? Traduzir para ingles. Nivel de dificuldade? Problemas simples? Colocar uma lista de uns 30 problemas?}
+%Although Huxley contains more than 300 programming exercises, in our study we rely only on the exercises based on the aforementioned curriculum. We do not expect a student solving problems that would require more advanced subjects, such as arrays.
 
-\todo{O que foi feito nos cursos? Aulas expositivas? Listas de exercicios? Importante para qualquer outro professor replicar.}
+%The material of this study consists of almost 300 programming exercises in Huxley. They were available for all students of all courses.
+
+%\todo{Descrever: quantas submissoes; quantos problemas? focar somente nos 30 dias?}
+
+%\todo{O que foi feito nos cursos? Aulas expositivas? Listas de exercicios? Importante para qualquer outro professor replicar.}
 
 \subsection{Procedure}
 
@@ -283,42 +287,46 @@ As mentioned, the objective of our study is ``to evaluate to what extent our str
 
 \subsubsection{Number of students}
 
-The efficacy of our strategy can strongly depend on the number of enrolled students in the course. In this context, if the number of students is small (e.g., 10 students), the own professor can identify---also early---the students that need help. This scenario is even more promising when the professor counts on assistants to help. Therefore, in this situation, our strategy adds little and professors might not notice benefits of using it.
+The efficacy of our strategy can strongly depend on the number of enrolled students in the course. In this context, if the number of students is small (e.g., 10 students), the own professor can identify---also early---the students that need help. This scenario is even more promising when the professor counts on assistants to help. Therefore, here our strategy adds little and professors might not notice the benefits of using it.
 
-On the other hand, despite having courses throughout Brazil with few students, it is common to find courses with 30, 40, 50, or even 60 enrolled students. In USA, this number can be even larger at some universities. In this scenario, our strategy can better support professors and their assistants. \todots
+On the other hand, despite having courses throughout Brazil with few students, it is common to find courses with 30, 40, 50, or even 60 enrolled students. In USA, for instance, this number can be even larger at some universities. In this context, previous studies~\cite{bulletin2007} considering 63 institutions report introductory programming courses with more than 600 students! The average course size is 116, but only 23\% of the courses have less than 30 students~\cite{bulletin2007}. In addition, they found that small classes (with less than 30 students) perform better regarding pass rates than larger ones.
 
-\todo{It seems like the small classes (less than 30 students) do better than the larger ones---the average pass rate in the small classes is 82\% whereas large classes only have an average pass rate of 69\%~\cite{bulletin2007}.}
+When considering larger classes, the task of identifying potential failing students becomes more difficult, time consuming, and error prone. Therefore, an automatic approach like our strategy can better support professors and their assistants. Moreover, once professors identify such students earlier, they may have better chances of helping the students before it is too late. So, the application of our strategy can also contribute to the dropout rate reduction.
 
-\todo{The size of the courses also varies a lot, from 8 students to 645. The mean course size is 116, but 23\% of the courses have less than 30 students~\cite{bulletin2007}.}
+%\todo{It seems like the small classes (less than 30 students) do better than the larger ones---the average pass rate in the small classes is 82\% whereas large classes only have an average pass rate of 69\%~\cite{bulletin2007}.}
 
-\todo{Citar na introducao que a estrategia funciona melhor para esses casos de turmas grandes.}
+%\todo{The size of the courses also varies a lot, from 8 students to 645. The mean course size is 116, but 23\% of the courses have less than 30 students~\cite{bulletin2007}.}
 
-\subsubsection{Mini testes}
+\subsubsection{Applying the Strategy versus Applying Exams}
 
-\todo{Posso aplicar muitos mini testes. Mas o esforco vai ser grande. Criar as questoes e corrigir. O uso do online judge ajuda.}
+One might wonder what is the difference between applying our strategy and applying a formal exam after 30 days. In this case, students with bad grades are candidates to fail the course. However, notice that one-day exams represent one specific chance to the student. So, it is not uncommon to confirm that this kind of exam often does not truly evaluate the students knowledge/skills. In this context, applying many exams can minimize such a problem. Nevertheless, when considering the professor perspective, grading programming many exams and reasoning at the same time about the potential failing students are time-consuming tasks, increasing effort.
 
-\todo{Bronca: Estrategia versus Tabela no huxley de scores nos exercicios. Como defender a estrategia? Por que o huxley sozinho nao e suficiente?}
+In contrast, by using online judges, professors might evaluate the students continuously. This way, they might better identify the students deficiencies automatically. In addition, online judges allow students to solve many problems (either as ordinary exercises or as formal exams), instead of only a couple commonly found in one-day exams. Here, many exams do not necessarily impact negatively on the professors effort.
 
-\todo{Outra bronca: Fiz uma prova nos 30 dias, quem tirou nota ruim, vai perder. Qual a diferenca disso pra estrategia?
+Our strategy represents a feasible way to identify potential failing students early. We perform the identification in an automatic way, reducing effort of professors and assistants. In addition, our results reveal that the strategy can identify such students with good precision, minimizing false positives.
 
-\begin{itemize}
 
-	\item So uma prova, nao haveria muito feedback. Dia ruim?
-	\item Varios minitestes, ha uma avaliação constante; a quantidade de dados e feedback e muito maior!
+%Notice, however, that setting meetings up whenever the strategy identifies potential candidates to fail represents 
 
-\end{itemize}
+%\todo{Posso aplicar muitos mini testes. Mas o esforco vai ser grande. Criar as questoes e corrigir. O uso do online judge ajuda.}
 
-}
+%\todo{Bronca: Estrategia versus Tabela no huxley de scores nos exercicios. Como defender a estrategia? Por que o huxley sozinho nao e suficiente?}
 
-\subsubsection{O que a estrategia oferece? Por que devo usa-la? Por que o que existe nao e suficiente?}
+%\begin{itemize}
 
-\begin{itemize}
+%	\item So uma prova, nao haveria muito feedback. Dia ruim?
+%	\item Varios minitestes, ha uma avaliação constante; a quantidade de dados e feedback e muito maior!
 
-	\item Automatico! Diminui o esforco para identificar.
-	\item Boa precisao.
-	\item 
+%\end{itemize}
 
-\end{itemize}
+%\subsubsection{O que a estrategia oferece? Por que devo usa-la? Por que o que existe nao e suficiente?}
+
+%\begin{itemize}
+%
+%	\item Automatico! Diminui o esforco para identificar.
+%	\item Boa precisao.
+%
+%\end{itemize}
 
 \subsection{Threats to validity}
 
