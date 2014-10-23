@@ -1,8 +1,8 @@
-\section{Early detection of potential failing students}
+\section{Strategy to early predict potential failing students}
 
 \label{sec:strategy}
 
-Identifying potential failing students early is very important in the sense that professors still have enough time to act and avoid students to fail the course. In case professors act based on the results of our strategy, we can indirectly help on reducing the high rate of failing students. However, in this paper, we focus exclusively on identifying these students. This way, evaluating and reporting the rate after applying our strategy is outside the scope of this paper.
+Identifying potential failing students early is very important in the sense that professors still have enough time to act and avoid students to fail the course. In case professors act based on the results of our strategy, we can indirectly help on reducing the high rate of failing students. However, in this article, we focus exclusively on identifying these students. This way, evaluating and reporting the rate after applying our strategy is outside the scope of this article.
 
 Next, we detail our strategy to identify these students.
 
@@ -13,7 +13,7 @@ Next, we detail our strategy to identify these students.
 
 To assess the students performance during a course, it is important to closely monitor them. In this context, metrics represent an alternative to measure their performance. However, retrieving metrics regarding each student is a difficult and time-consuming task. To minimize this problem, one might rely on online learning tools, since these systems are not only a source for these metrics, but allow their automatic retrieval. 
 
-A popular category of this kind of system is the online judges. These systems provide a set of programming problems so that students can submit their solutions. After submitting, the online judge executes the solution against a set of predefined test cases. In case the solution passes over all the tests, the system evaluates the solution as correct. Otherwise, the system evaluates the solution according to the error type (e.g., wrong answer, compilation error, time limit exceeded, runtime error, etc) and even might give important tips so that students can successfully solve the problem afterwards.
+A popular category of this kind of system is the online judges~\cite{uva, sphere}. These systems provide a set of programming problems so that students can submit their solutions. After submitting, the online judge executes the solution against a set of predefined test cases. In case the solution passes over all the tests, the system evaluates the solution as correct. Otherwise, the system evaluates the solution according to the error type (e.g., wrong answer, compilation error, time limit exceeded, runtime error, etc) and even might give important tips so that students can successfully solve the problem afterwards.
 
 Since students only learn how to program by programming~\cite{jenkins-ltsn02}, the online judges consists of an important environment in the sense students can practice and improve their learning process. Also, as the tool is available online, students can find their own rhythms. In addition, online judges play an important role regarding rapid feedback, once professors are often overwhelmed with their daily activities and sometimes are not able to help each student separately.
 
@@ -57,9 +57,9 @@ Depending on the level of difficulty of a problem, students may submit several t
 
 \subsection{Clustering algorithm}
 
-To identify potential failing students, we use a clustering algorithm to define groups of students. Our idea consists of identifying different groups of students so we can clearly separate students susceptible to fail from the other ones. To compute the groups, the algorithm takes into account the metrics we present in Section~\ref{sec:metrics}. To make the strategy parameterizable in terms of number of groups, we use the well-known clustering algorithm k-means~\cite{}, which takes such a number as input.
+To identify potential failing students, we use an existing clustering algorithm~\cite{hartigan-clustering-algorithms-1975} to define groups of students. Our idea consists of identifying different groups of students so we can clearly separate students susceptible to fail from the other ones. To compute the groups, the algorithm takes into account the metrics we present in Section~\ref{sec:metrics}. To make the strategy parameterizable in terms of number of groups, we use the well-known clustering algorithm k-means~\cite{k-means-1979}, which takes such a number as input.
 
-Notice that the number of groups plays an important role on identifying potential failing students. In this paper, we set the algorithm to compute two and three groups and evaluate both cases. For two groups, we have students who will either fail or pass. For three groups, we have fail, pass, and students in which the strategy will not conclude anything about them, which we name ``inconclusive.'' This is reasonable since our study focuses on the very first 30 days, which means our drawings regarding the inconclusive group might be completely wrong: these students can either improve themselves and pass the course or fail due to several reasons.
+Notice that the number of groups plays an important role on identifying potential failing students. In this article, we set the algorithm to compute two and three groups and evaluate both cases. For two groups, we have students who will either fail or pass. For three groups, we have fail, pass, and students in which the strategy will not conclude anything about them, which we name ``inconclusive.'' This is reasonable since our study focuses on the very first 30 days, which means our drawings regarding the inconclusive group might be completely wrong: these students can either improve themselves and pass the course or fail due to several reasons.
 
 We focus on two and three groups basically for two reasons: (i) using one group is useless; and (ii) more than three only brings more inconclusive groups to the table which, given our context, is pretty much the same of having only one inconclusive group.
 
@@ -69,7 +69,7 @@ Figure~\ref{fig:strategy} combines all steps of our strategy. Notice that our st
 
 %, as long as we can collect the metrics we consider, we can use any online judge system.
 
-To instantiate our strategy, we use the online judge system named \textit{Huxley}~\cite{paes2013ferramenta}. The system is available online only in portuguese at \url{http://www.thehuxley.com}. It provides a database composed by more than 300 problems classified according to level of difficulty and programming topics. This allows the students to choose the next problem in accordance to their corresponding levels.
+To instantiate our strategy, we use the online judge system named \textit{Huxley}~\cite{paes2013ferramenta}. The system is available online only in portuguese at \url{http://www.thehuxley.com}. It provides a database composed by more than 300 problems classified according to level of difficulty and programming topics. This allows the students to choose the next problem in accordance to their corresponding levels. Notice that this helps on avoiding misleading in our metrics, e.g., many incorrect submissions to a problem that the student is not able to solve yet.
 
 %and students are encouraged to use the system, once there is absolutely no penalty in case of wrong solutions.
 

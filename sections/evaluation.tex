@@ -4,7 +4,7 @@
 
 To evaluate our strategy, in this section we present the empirical study we conduct. The objective of this study is to evaluate to what extent our strategy is capable of identifying potential failing students in only 30 days. To explain our evaluation design, we first present the general settings in Section~\ref{sec:participants}. Then, we detail the procedure we use during the evaluation in Section~\ref{sec:procedure}.
 
-%Before explaining our study, we first introduce the terminology we use throughout this paper. In particular, we define in what follows four categories: abort, skip, fail, and pass.
+%Before explaining our study, we first introduce the terminology we use throughout this article. In particular, we define in what follows four categories: abort, skip, fail, and pass.
 %
 %\begin{itemize}
 %
@@ -27,7 +27,7 @@ To evaluate our strategy, in this section we present the empirical study we cond
 
 \label{sec:participants}
 
-The participants of our study are freshman students of introductory programming courses at the Federal University of Alagoas, Brazil. We ministered these courses during 3.5 years and collected the metrics we detail in Section~\ref{sec:metrics} of each student by using Huxley. Table~\ref{tab:participants} distributes the number of participants per semester.
+The participants of our study are freshmen students of introductory programming courses at the Federal University of Alagoas in Brazil. Paes ministered these courses during 3.5 years and collected the metrics we detail in Section~\ref{sec:metrics} of each student by using Huxley. Table~\ref{tab:participants} distributes the number of participants per semester.
 
 \begin{table}[h]
 \centering
@@ -72,7 +72,7 @@ Figure~\ref{fig:procedure} illustrates how we perform our evaluation. The result
 \label{fig:procedure}
 \end{figure}
 
-After applying the strategy, we now need to check whether it correctly predicts the failing students after 30 days. To do so, we use the academic system of the Federal University of Alagoas to look for grades and check whether the students failed or not. For example, for the detached circles, the strategy successfully identified that, after 30 days, two students would not pass and they indeed did not. Notice, however, that we may face false positives. Despite indicating the student \textit{Maria da Silva}\footnote{All names we consider in this paper are fictitious.} as a failing one after 30 days, such a student seemed to improve herself during the semester and she has been approved. In addition, we may also have false negatives. For instance, our strategy does not point the students \textit{Jos\'{e} da Silva} and \textit{Jo\~{a}o da Silva} as failing ones. Although \textit{Jos\'{e} da Silva} seems to be one of the best students after 30 days, he failed the course. The several reasons why this happened is out of the scope of this paper.
+After applying the strategy, we now need to check whether it correctly predicts the failing students after 30 days. To do so, we use the academic system of the Federal University of Alagoas to look for grades and check whether the students failed or not. For example, for the detached circles, the strategy successfully identified that, after 30 days, two students would not pass and they indeed did not. Notice, however, that we may face false positives. Despite indicating the student \textit{John Smith}\footnote{All names we consider in this article are fictitious.} as a failing one after 30 days, such a student seemed to improve herself during the semester and she has been approved. In addition, we may also have false negatives. For instance, our strategy does not point the students \textit{Emma Wilson} and \textit{David Miller} as failing ones. Although \textit{Emma Wilson} seems to be one of the best students after 30 days, he failed the course. The several reasons why this happened is out of the scope of this article.
 
 To better structure and analyze our results and, at the same time, take false positives and false negatives into account, we consider the following two metrics: precision and recall. Precision is the fraction of retrieved students that are relevant, i.e., the students pointed by the strategy that indeed failed the course. We have a perfect precision, 1.0, when every student retrieved by the strategy is relevant (i.e., a failing student), which means we have no false positives. Precision focuses on \textit{quality} and \textit{accuracy}. However, the precision says nothing about whether \textit{all} relevant students were indeed retrieved.
 
@@ -90,7 +90,7 @@ Recall = \frac{| \{relevant\_students\} \cap \{retrieved\_students\} |}{| \{rele
 $$
 \vspace{0.1cm}
 
-To better explain these metrics, consider the detached students in Figure~\ref{fig:procedure} as our set (three circles, one square, and one star). The relevant set is \textit{\{Jos\'{e}, Jo\~{a}o, Sandra, Teresa\}}, whereas the retrieved set is \textit{\{Maria, Sandra, Teresa\}}. The intersection set is \textit{\{Sandra, Teresa\}}. This way, we have
+To better explain these metrics, consider the detached students in Figure~\ref{fig:procedure} as our set (three circles, one square, and one star). The relevant set is \textit{\{Emma, David, Mary, Peter\}}, whereas the retrieved set is \textit{\{John, Mary, Peter\}}. The intersection set is \textit{\{Mary, Peter\}}. This way, we have
 
 \vspace{0.2cm}
 \noindent
@@ -98,12 +98,12 @@ To better explain these metrics, consider the detached students in Figure~\ref{f
 \begin{minipage}{.5\linewidth}
 \centering
 $$
-Precision = \frac{|\{Sandra, Teresa\}|}{|\{Maria, Sandra, Teresa\}|} = 67\%;
+Precision = \frac{|\{Mary, Peter\}|}{|\{John, Mary, Peter\}|} = 67\%;
 $$
 \end{minipage}
 \begin{minipage}{.5\linewidth}
 $$
-Recall = \frac{|\{Sandra, Teresa\}|}{|\{\textit{\text{Jos\'{e}}}, \textit{\text{Jo\~{a}o}}, Sandra, Teresa\}|} = 50\%.
+Recall = \frac{|\{Mary, Peter\}|}{|\{\textit{\text{Emma}}, \textit{\text{David}}, Mary, Peter\}|} = 50\%.
 $$
 \end{minipage}
 \normalsize
@@ -111,9 +111,11 @@ $$
 
 Our strategy pointed two out of three students as failed ones and they indeed failed. Therefore, we have 67\% of accuracy when identifying potential failing students, raising one false positive. On the other hand, only two out of four students have been pointed as failed ones. This means that the strategy was not able to identify all failing students, raising two false negatives.
 
-Last but not least, after confronting the strategy results with the academic system and summarizing precision and recall, we apply a statistical test to check for significance. Here, we rely on the proportion statistical test based on the Bernoulli distribution~\cite{} so that we have a binary distribution: fail or pass. In this paper, we follow the convention of considering a factor as being significant to the response variable when \textit{p-value} $< 0.05$~\cite{box-statistics-for-experimenters}.
+Last but not least, after confronting the strategy results with the academic system and summarizing precision and recall, we apply a statistical test to check for significance. Here, we rely on the proportion statistical test based on the Bernoulli distribution~\cite{linear-models-1989} so that we have a binary distribution: fail or pass. In this article, we follow the convention of considering a factor as being significant to the response variable when \textit{p-value} $< 0.05$~\cite{box-statistics-for-experimenters}.
 
 \section{Results and Discussion}
+
+\label{sec:results}
 
 In this section, we describe the results and test our hypotheses before discussing their implications. All data, materials, and R scripts are available at \url{http://www.ic.ufal.br/}.
 
@@ -271,7 +273,7 @@ Even though the strategy pointed students as potential failing ones in the first
 \label{tab:final-exams}
 \end{table}
 
-To better understand these false positives, we now analyze their grades at the academic system. In our study, we find that some of these students did not pass in the first place. In fact, they needed to perform the final exam to pass. At the university we focus on this paper, the final exam represents a second chance and is only available to students with not enough grades to pass.
+To better understand these false positives, we now analyze their grades at the academic system. In our study, we find that some of these students did not pass in the first place. In fact, they needed to perform the final exam to pass. At the university we focus on this article, the final exam represents a second chance and is only available to students with not enough grades to pass.
 
 This result is important in the sense that, although the strategy might raise false positives, it seems worth to follow these students as well. We find that at least 33\% of them need help (regardless of the number of groups, two or three), otherwise they reach the final exams. This way, professors and assistants can also give special attention to these students, which may improve their learning process, avoid final exams, and lead to better grades.
 

@@ -13,6 +13,12 @@ A.~Yadin, \href{http://doi.acm.org/10.1145/2038876.2038894}{Reducing the
   {\path{doi:10.1145/2038876.2038894}}.
 \newline\urlprefix\url{http://doi.acm.org/10.1145/2038876.2038894}
 
+\bibitem{bennedsen-sigcse-failure-rates-2007}
+J.~Bennedsen, M.~E. Caspersen, Failure rates in introductory programming,
+  SIGCSE Bull. 39~(2) (2007) 32--36.
+\newblock \href {http://dx.doi.org/10.1145/1272848.1272879}
+  {\path{doi:10.1145/1272848.1272879}}.
+
 \bibitem{why-dropout-icer06}
 P.~Kinnunen, L.~Malmi, \href{http://doi.acm.org/10.1145/1151588.1151604}{Why
   students drop out cs1 course?}, in: Proceedings of the Second International
@@ -22,15 +28,52 @@ P.~Kinnunen, L.~Malmi, \href{http://doi.acm.org/10.1145/1151588.1151604}{Why
   {\path{doi:10.1145/1151588.1151604}}.
 \newline\urlprefix\url{http://doi.acm.org/10.1145/1151588.1151604}
 
-\bibitem{bennedsen-sigcse-failure-rates-2007}
-J.~Bennedsen, M.~E. Caspersen, Failure rates in introductory programming,
-  SIGCSE Bull. 39~(2) (2007) 32--36.
-\newblock \href {http://dx.doi.org/10.1145/1272848.1272879}
-  {\path{doi:10.1145/1272848.1272879}}.
+\bibitem{butcher-predictor-high-school-1985}
+D.~F. Butcher, W.~A. Muth,
+  \href{http://doi.acm.org/10.1145/3166.3167}{Predicting performance in an
+  introductory computer science course}, Commun. ACM 28~(3) (1985) 263--268.
+\newblock \href {http://dx.doi.org/10.1145/3166.3167}
+  {\path{doi:10.1145/3166.3167}}.
+\newline\urlprefix\url{http://doi.acm.org/10.1145/3166.3167}
+
+\bibitem{simon-predictors-ace2006}
+Simon, S.~Fincher, A.~Robins, B.~Baker, I.~Box, Q.~Cutts, M.~de~Raadt,
+  P.~Haden, J.~Hamer, M.~Hamilton, R.~Lister, M.~Petre, K.~Sutton, D.~Tolhurst,
+  J.~Tutty, \href{http://dl.acm.org/citation.cfm?id=1151869.1151894}{Predictors
+  of success in a first programming course}, in: Proceedings of the 8th
+  Australasian Conference on Computing Education - Volume 52, ACE '06,
+  Australian Computer Society, Inc., Darlinghurst, Australia, Australia, 2006,
+  pp. 189--196.
+\newline\urlprefix\url{http://dl.acm.org/citation.cfm?id=1151869.1151894}
+
+\bibitem{camel-2006}
+S.~Dehnadi, R.~Bornat, The camel has two humps - (working title).
+
+\bibitem{lorenzenC06-mastermind-predictor-sigcse2008}
+T.~Lorenzen, H.-L. Chang,
+  \href{http://dblp.uni-trier.de/db/journals/sigcse/sigcse38.html#LorenzenC06}{Mastermind:
+  a predictor of computer programming aptitude.}, SIGCSE Bulletin 38~(2) (2006)
+  69--71.
+\newline\urlprefix\url{http://dblp.uni-trier.de/db/journals/sigcse/sigcse38.html#LorenzenC06}
+
+\bibitem{hartigan-clustering-algorithms-1975}
+J.~A. Hartigan, Clustering Algorithms, 99th Edition, John Wiley \& Sons, Inc.,
+  1975.
+
+\bibitem{uva}
+{U}{V}a {O}nline {J}udge, http://uva.onlinejudge.org/ (October 2014).
+
+\bibitem{sphere}
+{S}phere {O}nline {J}udge ({S}{P}{O}{J}), http://www.spoj.com/ (October 2014).
 
 \bibitem{jenkins-ltsn02}
 T.~Jenkins, {On the Difficulty of Learning to Program}, in: 3rd annual
   Conference of LTSN-ICS,, 2002.
+
+\bibitem{k-means-1979}
+J.~A. Hartigan, M.~A. Wong, Algorithm as 136: A k-means clustering algorithm,
+  Journal of the Royal Statistical Society. Series C (Applied Statistics) 28
+  (1979) 100--108.
 
 \bibitem{paes2013ferramenta}
 R.~d.~B. Paes, R.~Malaquias, M.~Guimar{\~a}es, H.~Almeida,
@@ -43,22 +86,13 @@ R.~d.~B. Paes, R.~Malaquias, M.~Guimar{\~a}es, H.~Almeida,
   {\path{doi:10.5753/CBIE.WCBIE.2013.203}}.
 \newline\urlprefix\url{http://www.br-ie.org/pub/index.php/wcbie/article/view/2669}
 
+\bibitem{linear-models-1989}
+P.~McCullagh, J.~Nelder, Generalized Linear Models, 2nd Edition, Chapman and
+  Hall/CRC, 1989.
+
 \bibitem{box-statistics-for-experimenters}
 G.~E.~P. Box, J.~S. Hunter, W.~G. Hunter, Statistics for Experimenters: design,
   innovation, and discovery, Wiley-Interscience, 2005.
-
-\bibitem{camel-2006}
-S.~Dehnadi, R.~Bornat, The camel has two humps - (working title).
-
-\bibitem{simon-predictors-ace2006}
-Simon, S.~Fincher, A.~Robins, B.~Baker, I.~Box, Q.~Cutts, M.~de~Raadt,
-  P.~Haden, J.~Hamer, M.~Hamilton, R.~Lister, M.~Petre, K.~Sutton, D.~Tolhurst,
-  J.~Tutty, \href{http://dl.acm.org/citation.cfm?id=1151869.1151894}{Predictors
-  of success in a first programming course}, in: Proceedings of the 8th
-  Australasian Conference on Computing Education - Volume 52, ACE '06,
-  Australian Computer Society, Inc., Darlinghurst, Australia, Australia, 2006,
-  pp. 189--196.
-\newline\urlprefix\url{http://dl.acm.org/citation.cfm?id=1151869.1151894}
 
 \bibitem{cheang-online-judge-2003}
 B.~Cheang, A.~Kurnia, A.~Lim, W.-C. Oon,
@@ -68,12 +102,5 @@ B.~Cheang, A.~Kurnia, A.~Lim, W.-C. Oon,
 \newblock \href {http://dx.doi.org/10.1016/S0360-1315(03)00030-7}
   {\path{doi:10.1016/S0360-1315(03)00030-7}}.
 \newline\urlprefix\url{http://dx.doi.org/10.1016/S0360-1315(03)00030-7}
-
-\bibitem{lorenzenC06-mastermind-predictor-sigcse2008}
-T.~Lorenzen, H.-L. Chang,
-  \href{http://dblp.uni-trier.de/db/journals/sigcse/sigcse38.html#LorenzenC06}{Mastermind:
-  a predictor of computer programming aptitude.}, SIGCSE Bulletin 38~(2) (2006)
-  69--71.
-\newline\urlprefix\url{http://dblp.uni-trier.de/db/journals/sigcse/sigcse38.html#LorenzenC06}
 
 \end{thebibliography}
