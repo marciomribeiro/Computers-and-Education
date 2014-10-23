@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{\texttt{#1}}\fi
 \expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
@@ -46,5 +46,34 @@ R.~d.~B. Paes, R.~Malaquias, M.~Guimar{\~a}es, H.~Almeida,
 \bibitem{box-statistics-for-experimenters}
 G.~E.~P. Box, J.~S. Hunter, W.~G. Hunter, Statistics for Experimenters: design,
   innovation, and discovery, Wiley-Interscience, 2005.
+
+\bibitem{camel-2006}
+S.~Dehnadi, R.~Bornat, The camel has two humps - (working title).
+
+\bibitem{simon-predictors-ace2006}
+Simon, S.~Fincher, A.~Robins, B.~Baker, I.~Box, Q.~Cutts, M.~de~Raadt,
+  P.~Haden, J.~Hamer, M.~Hamilton, R.~Lister, M.~Petre, K.~Sutton, D.~Tolhurst,
+  J.~Tutty, \href{http://dl.acm.org/citation.cfm?id=1151869.1151894}{Predictors
+  of success in a first programming course}, in: Proceedings of the 8th
+  Australasian Conference on Computing Education - Volume 52, ACE '06,
+  Australian Computer Society, Inc., Darlinghurst, Australia, Australia, 2006,
+  pp. 189--196.
+\newline\urlprefix\url{http://dl.acm.org/citation.cfm?id=1151869.1151894}
+
+\bibitem{cheang-online-judge-2003}
+B.~Cheang, A.~Kurnia, A.~Lim, W.-C. Oon,
+  \href{http://dx.doi.org/10.1016/S0360-1315(03)00030-7}{On automated grading
+  of programming assignments in an academic institution}, Comput. Educ. 41~(2)
+  (2003) 121--131.
+\newblock \href {http://dx.doi.org/10.1016/S0360-1315(03)00030-7}
+  {\path{doi:10.1016/S0360-1315(03)00030-7}}.
+\newline\urlprefix\url{http://dx.doi.org/10.1016/S0360-1315(03)00030-7}
+
+\bibitem{lorenzenC06-mastermind-predictor-sigcse2008}
+T.~Lorenzen, H.-L. Chang,
+  \href{http://dblp.uni-trier.de/db/journals/sigcse/sigcse38.html#LorenzenC06}{Mastermind:
+  a predictor of computer programming aptitude.}, SIGCSE Bulletin 38~(2) (2006)
+  69--71.
+\newline\urlprefix\url{http://dblp.uni-trier.de/db/journals/sigcse/sigcse38.html#LorenzenC06}
 
 \end{thebibliography}
