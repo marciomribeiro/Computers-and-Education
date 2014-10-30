@@ -75,15 +75,22 @@
 \address[ufcg]{Federal University of Campina Grande, Campina Grande, Brazil}
 
 \begin{abstract}
-The high rate of failing students in introductory programming courses is a common problem. In this context, previous work revealed data and reasons regarding why students fail the courses. Despite these advances, there is a lack of an approach to identify, during the course, that a particular set of students will fail. By having this set, professors and mentors would have time to act and potentially avoid such failings. This way, this article proposes a strategy to early identify failing students during introductory programming courses. We apply our strategy considering the first 30 days of the course. To evaluate our strategy, we conduct an empirical study regarding 7 courses (3.5 years in total). The study reveals that, from the group of students our strategy points as ``likely to fail,'' 72\% of the students indeed fail with 95\% standard confidence level. In addition, despite missing 28\%, this set seems still interesting, since at least 33\% of these students reach the final exam. Therefore, although they pass, we still consider they are good candidates to give special attention as well, which may avoid final exams and lead to better grades.
+Predictors to identify whether a student will succeed or fail in introductory programming courses have been provided by previous research. However, these predictors rely on big, complicated, and time-consuming aptitude tests and surveys, bringing subjectiveness due to the interview process. This way, setting, executing, and replicating these studies is hard and increase the professor effort. To minimize this problem, this article proposes a strategy to automatically predict the potential failing students during introductory programming courses, reducing effort and allowing the professor to use it in every course. By having this set of students in the first days of the course, professors and mentors would have time to act and potentially avoid such failings. To evaluate our strategy, we conduct an empirical study regarding freshmen students of 7 introductory programming courses (3.5 years in total). We apply our strategy considering the first 30 days of the course (25\% of the semester). The same professor taught all courses using the C language. The study reveals that, from the group of students our strategy points as ``likely to fail,'' 72\% of the students indeed fail with 95\% standard confidence level. In addition, despite missing 28\%, this set seems still interesting, since at least 33\% of these students reach the final exam. Therefore, although they pass, we still consider they are good candidates to give special attention as well, which may avoid final exams and lead to better grades. We also conclude that the efficacy of our strategy depends on the number of students in the course.
 
-%In addition, when considering the 28\% remaining, at least 33\% of the students reach the final exam, which means that, although they pass, they are good candidates 
-%The study reveals that our strategy successfully identifies 72\% of the failing students with 95\% standard confidence level.
 
+%we conclude that the efficacy of our strategy can strongly depend on the number of students in the course. Because the strategy is automatic, the effort to predict the potential failing students in a course with hundreds~\cite{bennedsen-sigcse-failure-rates-2007} can significantly reduce. In case the course has few students (e.g., 10 students), we report that our strategy adds little, since the own professor can identify the failing candidates.
+
+%there is a lack of an automatic approach capable of predicting a set of students that will fail.
+
+%the approach must be automatic---requiring almost no effort from professors and mentors---otherwise they might not use it.
+
+
+
+%The high rate of failing students in introductory programming courses is a common problem. In this context, previous work revealed data and reasons regarding why students fail the courses. Despite these advances, there is a lack of an approach to identify, during the course, that a particular set of students will fail. By having this set, professors and mentors would have time to act and potentially avoid such failings. This way, this article proposes a strategy to early identify failing students during introductory programming courses. We apply our strategy considering the first 30 days of the course. To evaluate our strategy, we conduct an empirical study regarding 7 courses (3.5 years in total). The study reveals that, from the group of students our strategy points as ``likely to fail,'' 72\% of the students indeed fail with 95\% standard confidence level. In addition, despite missing 28\%, this set seems still interesting, since at least 33\% of these students reach the final exam. Therefore, although they pass, we still consider they are good candidates to give special attention as well, which may avoid final exams and lead to better grades.
 \end{abstract}
 
 \begin{keyword}
-Programming courses, clustering
+Predictors, Introductory Programming Courses, Dropout Rate.
 \MSC[2010] 00-01\sep  99-00
 \end{keyword}
 
@@ -107,7 +114,7 @@ Programming courses, clustering
 
 We would like to thank CNPq, a Brazilian research funding agency, for partially supporting this work. Ribeiro's work was partially supported by RHAE 453716/2013-0.
 
-%\section*{References}
+\section{References}
 
 \bibliography{mybibfile}
 

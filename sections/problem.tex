@@ -2,17 +2,43 @@
 
 \label{sec:problem}
 
-Due to the high number of students, professors and assistants usually do not identify potential failing students during the courses they teach. In this context, professors are not aware of what actually hinders particular students during the learning process. With no additional help, students have no enthusiasm regarding the classes and get frustrated and disappointed, specially when they see their friends excited about the course. This situation causes shame and timidity, which may lead them to not ask questions or not participate in class. When considering introductory programming courses, this frustration may lead students to fail the course.
+Professors often are not aware of what actually hinders particular students during the learning process. Another difficulty consists of pointing out the exactly students that need help, specially when considering courses with hundreds of enrolled students~\cite{bennedsen-sigcse-failure-rates-2007}. With no support, students might have no enthusiasm regarding the classes and get frustrated and disappointed, leading them to fail the course.
+
+In this context, there is no straightforward way to predict the potential failing students during introductory programming courses. When professors and mentors do not early identify such students, they may act too late---or even may not act, since there is no available time anymore---and the students drop out the course anyway. In case they act just a bit late, they still face the hard task of recovering such students, which happens to be even harder in programming courses. Here, to understand the next class there is a strong prerequisite of understanding the previous ones (e.g., to understand loops, students must understand conditional structures). 
+
+So, not identifying failing students early is a critical problem, specially when we consider that programming is one of the first courses that students face in their computer science university program. If these courses have as high failure rates as claimed, they could be one of the factors influencing the declining number of students taking a degree in computer science \cite{bennedsen-sigcse-failure-rates-2007}.
+
+Previous research introduce predictors to identify these students. However, they use aptitude tests and surveys to qualitatively identify the student skills and decide whether the student will succeed or fail~\cite{butcher-predictor-high-school-1985, simon-predictors-ace2006, camel-2006}, which might bring subjectiveness due to the interviews. They also consider lots of variables, which makes the studies hard to set, execute, and replicate, being time consuming and increasing the professor effort.
+
+To minimize this problem, we present in the next section a strategy to predict automatically the potential failing students in introductory programming courses. Our strategy consists of three simple steps and it is automatic and objective (relying on metrics), reducing effort and allowing professors to use it in their courses.
+
+
+
+
+%Due to the high number of students, professors and mentors might face difficulties to identify the potential failing students during the courses they teach. In this context, professors often are not aware of what actually hinders particular students during the learning process. With no additional help, students have no enthusiasm regarding the classes and get frustrated and disappointed, leading them to fail the course.
+
+
+%specially when they see their friends excited about the course. This situation causes shame and timidity, which may lead them to not ask questions or not participate in class. When considering introductory programming courses, this frustration may lead students to fail the course.
+
+
 
 %Why the problem is relevant, important?
-In this context, there is no easy way to \textit{early} identify potential failing students during introductory programming courses. When professors and assistants do not early identify students that tend to fail the programming course, they may act too late---or even may not act, since there is no available time anymore---and the students drop out the course anyway. In case they act a bit late, they still face the hard task of recovering such students, which happens to be even harder in programming courses. In this context, to understand the next class there is a strong prerequisite of understanding the previous ones (e.g., to understand loops, students must understand conditional structures).
+%In this context, there is no easy way to \textit{early} identify potential failing students during introductory programming courses. When professors and mentors do not early identify students that tend to fail the programming course, they may act too late---or even may not act, since there is no available time anymore---and the students drop out the course anyway. In case they act a bit late, they still face the hard task of recovering such students, which happens to be even harder in programming courses. In this context, to understand the next class there is a strong prerequisite of understanding the previous ones (e.g., to understand loops, students must understand conditional structures).
 
-This way, not identifying failing students early is a critical problem, specially when we consider that programming is one of the first courses that students face in their computer science university program. If these courses have as high failure rates as claimed, they could be one of the factors influencing the declining number of students taking a degree in computer science \cite{bennedsen-sigcse-failure-rates-2007}.
+%This way, not identifying failing students early is a critical problem, specially when we consider that programming is one of the first courses that students face in their computer science university program. If these courses have as high failure rates as claimed, they could be one of the factors influencing the declining number of students taking a degree in computer science \cite{bennedsen-sigcse-failure-rates-2007}.
 
-Notice that the problem of identifying failing students is even more critical when considering courses with high number of enrolled students. \todots
+%Notice that the problem of identifying failing students is even more critical when considering courses with high number of enrolled students. \todots
 
-To minimize the lack of an early identification of potential failing students that would enable professors and assistants to act faster in order to avoid such failings, we next present a strategy that consists of three simple steps: the use of a online judge system, metrics collection, and execution of a well-known clustering algorithm~\cite{hartigan-clustering-algorithms-1975}.
+
 
 %\todo{Relevar mais o problema do dropout rate. Fico com medo de fugir um pouco do escopo. O problema e identificar cedo ou o high dropout rate??? Ou a relevância do early esta no sentido que, ao nao identificar, temos high rates?}
 
 %\todo{Citar as linguagens desses papers com high dropout. Pegar dados de outros artigos. Dos nossos cursos também.}
+
+%To minimize the lack of an early identification of potential failing students that would enable professors and mentors to act faster in order to avoid such failings, we next present a strategy that consists of three simple steps: the use of a online judge system, metrics collection, and execution of a well-known clustering algorithm~\cite{hartigan-clustering-algorithms-1975}.
+
+
+%Due to the high number of students, professors and mentors might face difficulties to identify the potential failing students during the courses they teach. In this context, professors often are not aware of what actually hinders particular students during the learning process. With no additional help, students have no enthusiasm regarding the classes and get frustrated and disappointed, leading them to fail the course.
+
+
+%specially when they see their friends excited about the course. This situation causes shame and timidity, which may lead them to not ask questions or not participate in class. When considering introductory programming courses, this frustration may lead students to fail the course.

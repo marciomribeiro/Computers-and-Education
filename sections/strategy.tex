@@ -2,9 +2,11 @@
 
 \label{sec:strategy}
 
-Identifying potential failing students early is very important in the sense that professors still have enough time to act and avoid students to fail the course. In case professors act based on the results of our strategy, we can indirectly help on reducing the high rate of failing students. However, in this article, we focus exclusively on identifying these students. This way, evaluating and reporting the rate after applying our strategy is outside the scope of this article.
+Predicting the potential failing students early is very important in the sense that professors still have enough time to act and avoid students to fail the course. Notice that in case professors act based on the results of our strategy, we can indirectly help on reducing the high rate of failing students. However, in this article, we focus exclusively on identifying these students. This way, evaluating and reporting the rate after applying our strategy is outside the scope of this article.
 
-Next, we detail our strategy to identify these students.
+Our strategy is automatic and objective, consisting of three simple steps: the use of a online judge system, metrics collection, and execution of a well-known clustering algorithm~\cite{hartigan-clustering-algorithms-1975}. Because the strategy is automatic, professors can replicate in their courses, reducing their effort.
+
+Next, we detail the three steps of our strategy to predict the failing students.
 
 \subsection{Online judge system}
 % This section should answer: Why is this kind of system important to identify potential falling students?
@@ -69,7 +71,7 @@ Figure~\ref{fig:strategy} combines all steps of our strategy. Notice that our st
 
 %, as long as we can collect the metrics we consider, we can use any online judge system.
 
-To instantiate our strategy, we use the online judge system named \textit{Huxley}~\cite{paes2013ferramenta}. The system is available online only in portuguese at \url{http://www.thehuxley.com}. It provides a database composed by more than 300 problems classified according to level of difficulty and programming topics. This allows the students to choose the next problem in accordance to their corresponding levels. Notice that this helps on avoiding misleading in our metrics, e.g., many incorrect submissions to a problem that the student is not able to solve yet.
+To instantiate our strategy, we use the online judge system named \textit{Huxley}~\cite{paes2013ferramenta}. The system is available online only in portuguese at \url{http://www.thehuxley.com/}. It provides a database composed by more than 300 problems classified according to level of difficulty and programming topics. This allows the students to choose the next problem in accordance to their corresponding levels. Notice that this helps on avoiding misleading in our metrics, e.g., many incorrect submissions to a problem that the student is not able to solve yet.
 
 %and students are encouraged to use the system, once there is absolutely no penalty in case of wrong solutions.
 
@@ -77,7 +79,7 @@ To instantiate our strategy, we use the online judge system named \textit{Huxley
 
 %As the classes are happening, we encourage students to solve the problems available at Huxley. Although solving exercises is not mandatory, there are some particular activities where the professor forces students to use Huxley, such as formal exams.
 
-Next, we collect the metrics we detail in Section~\ref{sec:metrics}. To identify potential failing students \textit{early}, we collect the metrics for the first 30 days of the introductory programming courses. Then, we execute the k-means clustering algorithm.
+Next, we collect the metrics we detail in Section~\ref{sec:metrics}. To identify potential failing students \textit{early}, we collect the metrics for the first 30 days (representing 25\% of the semester) of the introductory programming courses. Then, we execute the k-means clustering algorithm.
 
 \begin{figure}[htb]
 \centering
