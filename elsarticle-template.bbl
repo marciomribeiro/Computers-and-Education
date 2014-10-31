@@ -6,101 +6,100 @@
   \def\href#1#2{#2} \def\path#1{#1}\fi
 
 \bibitem{yadin-inroads-acm-11}
-A.~Yadin, \href{http://doi.acm.org/10.1145/2038876.2038894}{Reducing the
-  dropout rate in an introductory programming course}, ACM Inroads 2~(4) (2011)
-  71--76.
-\newblock \href {http://dx.doi.org/10.1145/2038876.2038894}
-  {\path{doi:10.1145/2038876.2038894}}.
-\newline\urlprefix\url{http://doi.acm.org/10.1145/2038876.2038894}
-
-\bibitem{bennedsen-sigcse-failure-rates-2007}
-J.~Bennedsen, M.~E. Caspersen, Failure rates in introductory programming,
-  SIGCSE Bull. 39~(2) (2007) 32--36.
-\newblock \href {http://dx.doi.org/10.1145/1272848.1272879}
-  {\path{doi:10.1145/1272848.1272879}}.
-
-\bibitem{why-dropout-icer06}
-P.~Kinnunen, L.~Malmi, \href{http://doi.acm.org/10.1145/1151588.1151604}{Why
-  students drop out cs1 course?}, in: Proceedings of the Second International
-  Workshop on Computing Education Research, ICER '06, ACM, New York, NY, USA,
-  2006, pp. 97--108.
-\newblock \href {http://dx.doi.org/10.1145/1151588.1151604}
-  {\path{doi:10.1145/1151588.1151604}}.
-\newline\urlprefix\url{http://doi.acm.org/10.1145/1151588.1151604}
-
-\bibitem{butcher-predictor-high-school-1985}
-D.~F. Butcher, W.~A. Muth,
-  \href{http://doi.acm.org/10.1145/3166.3167}{Predicting performance in an
-  introductory computer science course}, Commun. ACM 28~(3) (1985) 263--268.
-\newblock \href {http://dx.doi.org/10.1145/3166.3167}
-  {\path{doi:10.1145/3166.3167}}.
-\newline\urlprefix\url{http://doi.acm.org/10.1145/3166.3167}
-
-\bibitem{simon-predictors-ace2006}
-Simon, S.~Fincher, A.~Robins, B.~Baker, I.~Box, Q.~Cutts, M.~de~Raadt,
-  P.~Haden, J.~Hamer, M.~Hamilton, R.~Lister, M.~Petre, K.~Sutton, D.~Tolhurst,
-  J.~Tutty, \href{http://dl.acm.org/citation.cfm?id=1151869.1151894}{Predictors
-  of success in a first programming course}, in: Proceedings of the 8th
-  Australasian Conference on Computing Education - Volume 52, ACE '06,
-  Australian Computer Society, Inc., Darlinghurst, Australia, Australia, 2006,
-  pp. 189--196.
-\newline\urlprefix\url{http://dl.acm.org/citation.cfm?id=1151869.1151894}
+A.~Yadin, {Reducing the Dropout Rate in an Introductory Programming Course},
+  ACM Inroads 2~(4) (2011) 71--76.
 
 \bibitem{camel-2006}
 S.~Dehnadi, R.~Bornat, The camel has two humps - (working title).
 
+\bibitem{what-works-cacm-2013}
+L.~Porter, M.~Guzdial, C.~McDowell, B.~Simon, {Success in Introductory
+  Programming: What Works?}, Communications of the ACM 56~(8) (2013) 34--36.
+
+\bibitem{bennedsen-sigcse-failure-rates-2007}
+J.~Bennedsen, M.~E. Caspersen, {Failure Rates in Introductory Programming},
+  SIGCSE Bull. 39~(2) (2007) 32--36.
+
+\bibitem{why-dropout-icer06}
+P.~Kinnunen, L.~Malmi, {Why Students Drop out CS1 Course?}, in: Proceedings of
+  the Second International Workshop on Computing Education Research, ICER, ACM,
+  2006, pp. 97--108.
+
+\bibitem{hostetler-aptitude-1983}
+T.~R. Hostetler, {Predicting Student Success in an Introductory Programming
+  Course}, SIGCSE Bull. 15~(3) (1983) 40--43.
+
+\bibitem{butcher-predictor-high-school-1985}
+D.~F. Butcher, W.~A. Muth, {Predicting Performance in an Introductory Computer
+  Science Course}, Communications of the ACM 28~(3) (1985) 263--268.
+
+\bibitem{simon-predictors-ace2006}
+Simon, S.~Fincher, A.~Robins, B.~Baker, I.~Box, Q.~Cutts, M.~de~Raadt,
+  P.~Haden, J.~Hamer, M.~Hamilton, R.~Lister, M.~Petre, K.~Sutton, D.~Tolhurst,
+  J.~Tutty, {Predictors of Success in a First Programming Course}, in:
+  Proceedings of the 8th Australasian Conference on Computing Education, ACE,
+  Australian Computer Society, Inc., 2006, pp. 189--196.
+
+\bibitem{ibm-aptitude-test}
+J.~L. Hughes, W.~J. McNamara, {IBM Programmer Aptitude Test},
+  \url{http://ed-thelen.org/comp-hist/IBM-ProgApti-120-6762-2.html} (October
+  2014).
+
 \bibitem{lorenzenC06-mastermind-predictor-sigcse2008}
-T.~Lorenzen, H.-L. Chang,
-  \href{http://dblp.uni-trier.de/db/journals/sigcse/sigcse38.html#LorenzenC06}{Mastermind:
-  a predictor of computer programming aptitude.}, SIGCSE Bulletin 38~(2) (2006)
-  69--71.
-\newline\urlprefix\url{http://dblp.uni-trier.de/db/journals/sigcse/sigcse38.html#LorenzenC06}
+T.~Lorenzen, H.-L. Chang, {MasterMind: a predictor of computer programming
+  aptitude}, SIGCSE Bulletin 38~(2) (2006) 69--71.
+
+\bibitem{harris-assembly-jcsc2014}
+J.~Harris, {Testing Programming Aptitude in Introductory Programming Courses},
+  Journal of Computing Sciences in Colleges 30~(2) (2014) 149--156.
 
 \bibitem{hartigan-clustering-algorithms-1975}
 J.~A. Hartigan, Clustering Algorithms, 99th Edition, John Wiley \& Sons, Inc.,
   1975.
 
 \bibitem{uva}
-{U}{V}a {O}nline {J}udge, http://uva.onlinejudge.org/ (October 2014).
+{U}{V}a {O}nline {J}udge, \url{http://uva.onlinejudge.org/} (October 2014).
 
 \bibitem{sphere}
-{S}phere {O}nline {J}udge ({S}{P}{O}{J}), http://www.spoj.com/ (October 2014).
+{S}phere {O}nline {J}udge ({S}{P}{O}{J}), \url{http://www.spoj.com/} (October
+  2014).
 
 \bibitem{jenkins-ltsn02}
 T.~Jenkins, {On the Difficulty of Learning to Program}, in: 3rd annual
-  Conference of LTSN-ICS,, 2002.
+  Conference of LTSN-ICS, 2002, pp. 53--58.
+
+\bibitem{autolep-2011}
+T.~Wang, X.~Su, P.~Ma, Y.~Wang, K.~Wang, {Ability-training-oriented Automated
+  Assessment in Introductory Programming Course}, Computers \& Education 56~(1)
+  (2011) 220--226.
+
+\bibitem{cheang-online-judge-2003}
+B.~Cheang, A.~Kurnia, A.~Lim, W.-C. Oon, {On Automated Grading of Programming
+  Assignments in an Academic Institution}, Computers \& Education 41~(2) (2003)
+  121--131.
 
 \bibitem{k-means-1979}
-J.~A. Hartigan, M.~A. Wong, Algorithm as 136: A k-means clustering algorithm,
+J.~A. Hartigan, M.~A. Wong, {Algorithm AS 136: A K-Means Clustering Algorithm},
   Journal of the Royal Statistical Society. Series C (Applied Statistics) 28
   (1979) 100--108.
 
 \bibitem{paes2013ferramenta}
-R.~d.~B. Paes, R.~Malaquias, M.~Guimar{\~a}es, H.~Almeida,
-  \href{http://www.br-ie.org/pub/index.php/wcbie/article/view/2669}{Ferramenta
-  para a avalia{\c{c}}{\~a}o de aprendizado de alunos em programa{\c{c}}{\~a}o
-  de computadores}, in: Anais dos Workshops do Congresso Brasileiro de
+R.~d.~B. Paes, R.~Malaquias, M.~Guimar{\~a}es, H.~Almeida, {Ferramenta para a
+  Avalia{\c{c}}{\~a}o de Aprendizado de Alunos em Programa{\c{c}}{\~a}o de
+  Computadores}, in: Anais dos Workshops do Congresso Brasileiro de
   Inform{\'a}tica na Educa{\c{c}}{\~a}o, Vol.~1, 2013, pp. 203--212, in
-  portuguese.
-\newblock \href {http://dx.doi.org/10.5753/CBIE.WCBIE.2013.203}
-  {\path{doi:10.5753/CBIE.WCBIE.2013.203}}.
-\newline\urlprefix\url{http://www.br-ie.org/pub/index.php/wcbie/article/view/2669}
+  Portuguese.
 
 \bibitem{linear-models-1989}
-P.~McCullagh, J.~Nelder, Generalized Linear Models, 2nd Edition, Chapman and
+P.~McCullagh, J.~Nelder, {Generalized Linear Models}, 2nd Edition, Chapman and
   Hall/CRC, 1989.
 
 \bibitem{box-statistics-for-experimenters}
-G.~E.~P. Box, J.~S. Hunter, W.~G. Hunter, Statistics for Experimenters: design,
-  innovation, and discovery, Wiley-Interscience, 2005.
+G.~E.~P. Box, J.~S. Hunter, W.~G. Hunter, {Statistics for Experimenters:
+  Design, Innovation, and Discovery}, Wiley-Interscience, 2005.
 
-\bibitem{cheang-online-judge-2003}
-B.~Cheang, A.~Kurnia, A.~Lim, W.-C. Oon,
-  \href{http://dx.doi.org/10.1016/S0360-1315(03)00030-7}{On automated grading
-  of programming assignments in an academic institution}, Comput. Educ. 41~(2)
-  (2003) 121--131.
-\newblock \href {http://dx.doi.org/10.1016/S0360-1315(03)00030-7}
-  {\path{doi:10.1016/S0360-1315(03)00030-7}}.
-\newline\urlprefix\url{http://dx.doi.org/10.1016/S0360-1315(03)00030-7}
+\bibitem{r-statistical}
+The {R} {P}roject for {S}tatistical {C}omputing,
+  \url{http://www.r-project.org/} (October 2014).
 
 \end{thebibliography}

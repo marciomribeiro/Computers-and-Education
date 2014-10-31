@@ -17,7 +17,9 @@ To assess the students performance during a course, it is important to closely m
 
 A popular category of this kind of system is the online judges~\cite{uva, sphere}. These systems provide a set of programming problems so that students can submit their solutions. After submitting, the online judge executes the solution against a set of predefined test cases. In case the solution passes over all the tests, the system evaluates the solution as correct. Otherwise, the system evaluates the solution according to the error type (e.g., wrong answer, compilation error, time limit exceeded, runtime error, etc) and even might give important tips so that students can successfully solve the problem afterwards.
 
-Since students only learn how to program by programming~\cite{jenkins-ltsn02}, the online judges consists of an important environment in the sense students can practice and improve their learning process. Also, as the tool is available online, students can find their own rhythms. In addition, online judges play an important role regarding rapid feedback, once professors are often overwhelmed with their daily activities and sometimes are not able to help each student separately.
+Since students only learn how to program by programming~\cite{jenkins-ltsn02}, the online judges consists of an important environment in the sense students can constantly practice and improve their learning process. In addition, online judges play an important role regarding rapid, constructive, and corrective feedback, once professors are often overwhelmed with their daily activities\footnote{For instance, in Brazil professors very commonly deal with bureaucratic activities and have no support from administrative assistants.} and sometimes are not able to help each student separately~\cite{autolep-2011}. The support is even harder in large class sizes~\cite{autolep-2011}, so an online tool helps on this front as well.
+
+%Also, as the tool is available online, students can find their own rhythms.
 
 Given all these advantages, the use of an online judge system is the first step of our strategy. We then can monitor students to automatically identify the candidates to fail the course.
 
@@ -53,9 +55,9 @@ The second step of our strategy consists of metrics retrieval. In particular, we
 
 \end{itemize}
 
-Depending on the level of difficulty of a problem, students may submit several times to solve it. However, notice that this is not necessarily a bad thing regarding the learning process. For example, submitting many times means that students are somehow practicing and studying continuously. Thus, although she is not hitting a right solution, she is trying hard and will eventually hit one. Thus, the number of submissions metric is a good indicator of the amount of practice, which is frequently associated with the level of engaging and learning. However, when considered isolated, a high number of submissions may also mean that the student is getting frustrated due to so many wrong answers she receives. This way, we also consider the number of correct submissions to compensate and help us on studying such cases as well.
+Depending on the level of difficulty of a problem, students may submit several times to solve it. However, notice that this is not necessarily a bad thing regarding the learning process. For example, submitting many times means that students are somehow practicing and studying continuously. Thus, although she is not hitting a right solution, she is trying hard and will eventually hit one. Thus, the number of submissions metric is a good indicator of the amount of practice, which is very important in programming activities~\cite{cheang-online-judge-2003} and is frequently associated with the level of engaging and learning. However, when considered isolated, a high number of submissions may also mean that the student is getting frustrated due to so many wrong answers she receives. This way, we also consider the number of correct submissions to compensate and help us on studying such cases as well.
 
-\todo{Referencia do porque as metricas sao boas: quanto menos exercicio, maior a probabilidade de levar pau.}
+%\todo{Referencia do porque as metricas sao boas: quanto menos exercicio, maior a probabilidade de levar pau.}
 
 \subsection{Clustering algorithm}
 
@@ -71,7 +73,7 @@ Figure~\ref{fig:strategy} combines all steps of our strategy. Notice that our st
 
 %, as long as we can collect the metrics we consider, we can use any online judge system.
 
-To instantiate our strategy, we use the online judge system named \textit{Huxley}~\cite{paes2013ferramenta}. The system is available online only in portuguese at \url{http://www.thehuxley.com/}. It provides a database composed by more than 300 problems classified according to level of difficulty and programming topics. This allows the students to choose the next problem in accordance to their corresponding levels. Notice that this helps on avoiding misleading in our metrics, e.g., many incorrect submissions to a problem that the student is not able to solve yet.
+To instantiate our strategy, we use the online judge system named \textit{Huxley}~\cite{paes2013ferramenta}. The system is available online only in portuguese at \url{http://www.thehuxley.com/}. There are almost \huxleyProfessors registered professors and more than \huxleyCourses registered courses. Also, more than \huxleyInstitutions institutions around Brazil use the system. Huxley provides a database composed by more than \huxleyProblems problems classified according to level of difficulty and programming topics. This allows the students to choose the next problem in accordance to their corresponding levels. Notice that this helps on avoiding misleading in our metrics, e.g., many incorrect submissions to a problem that the student is not able to solve yet.
 
 %and students are encouraged to use the system, once there is absolutely no penalty in case of wrong solutions.
 
@@ -79,15 +81,19 @@ To instantiate our strategy, we use the online judge system named \textit{Huxley
 
 %As the classes are happening, we encourage students to solve the problems available at Huxley. Although solving exercises is not mandatory, there are some particular activities where the professor forces students to use Huxley, such as formal exams.
 
-Next, we collect the metrics we detail in Section~\ref{sec:metrics}. To identify potential failing students \textit{early}, we collect the metrics for the first 30 days (representing 25\% of the semester) of the introductory programming courses. Then, we execute the k-means clustering algorithm.
+Next, we collect the metrics we detail in Section~\ref{sec:metrics}. To identify potential failing students \textit{early}, we collect the metrics for the first 30 days (representing \semesterPercentage of the semester) of the introductory programming courses. Then, we execute the k-means clustering algorithm.
 
-\begin{figure}[htb]
+\begin{figure}[h]
 \centering
 \includegraphics[width=1.0\textwidth,natwidth=610,natheight=642]{images/Strategy.pdf}
 \caption{Summary of our strategy to identify potential failing students.}
 \label{fig:strategy}
 \end{figure}
 
-We illustrate the groups using shapes in Figure~\ref{fig:strategy}. In this particular case, we set k-means to compute three different groups. The circles represent the students candidates to fail the course. Notice that they submitted few solutions and few of them are correct.
+We illustrate the k-means result in a two-dimensional plot (we represent one dimension for each metric we consider). Also, we illustrate the groups using shapes in Figure~\ref{fig:strategy}. In this particular case, we set k-means to compute three different groups. The circles represent the students candidates to fail the course. Notice that they submitted few solutions and few of them are correct.
+
+
+
+%The same professor (Paes, one of the authors) taught the 7 semesters. The classes happened in a lab and some exercises available in Huxley were solved during the class. The professor strongly encouraged all students to submit solutions for the problems available in Huxley during extra-class activities, once there is absolutely no penalty in case of wrong submitted solutions. However, during the first 30 days, the use of Huxley was mandatory for approximately 6 exercises (used as a small percentage of the final grade) and for the first formal exam (held closely to the 30th day).
 
 %\todo{Como deixar a estrategia mais geral? Dizer que pode ser qualquer online judge desde que tenha as metricas? Dizer que e mais geral e que instanciamos a estrategia com o huxley.}
