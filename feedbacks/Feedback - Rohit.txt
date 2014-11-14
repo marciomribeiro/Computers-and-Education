@@ -39,3 +39,16 @@ Rohit achou muito abstrato como replicar na disciplina dele. O que ele pode vari
 - Destacar a importância do online judge: muitos exercícios pra corrigir
 
 - No Brasil, várias TURMAS e vários ALUNOS!
+
+==============================
+Segunda rodada:
+
+Threats:
+
+	- Alguns alunos podem ter tido contato com programacao
+
+- Estudo totalmente realizado em 2014. Não usou propositalmente nenhuma tecnica (para o predictor).
+- Intuitivamente, o professor pode chamar atencao de algum aluno para que ele estude mais e nao perca.
+- Mas, isso nao proposital perante esse artigo.
+
+http://www.grammarbook.com/numbers/numbers.asp

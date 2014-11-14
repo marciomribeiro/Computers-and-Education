@@ -102,4 +102,45 @@ G.~E.~P. Box, J.~S. Hunter, W.~G. Hunter, {Statistics for Experimenters:
 The {R} {P}roject for {S}tatistical {C}omputing,
   \url{http://www.r-project.org/} (October 2014).
 
+\bibitem{rodrigo-behavioral-ITiCSE2009}
+M.~M.~T. Rodrigo, R.~S. Baker, M.~C. Jadud, A.~C.~M. Amarra, T.~Dy, M.~B.~V.
+  Espejo-Lahoz, S.~A.~L. Lim, S.~A. Pascua, J.~O. Sugay, E.~S. Tabanao,
+  {Affective and Behavioral Predictors of Novice Programmer Achievement}, in:
+  Proceedings of the 14th Annual ACM SIGCSE Conference on Innovation and
+  Technology in Computer Science Education (ITiCSE), ACM, 2009, pp. 156--160.
+
+\bibitem{emily-icer-2011}
+E.~S. Tabanao, M.~M.~T. Rodrigo, M.~C. Jadud, Predicting at-risk novice java
+  programmers through the analysis of online protocols, in: Proceedings of the
+  Seventh International Workshop on Computing Education Research (ICER), ACM,
+  2011, pp. 85--92.
+
+\bibitem{emily-up-2008}
+E.~S. Tabanao, M.~M.~T. Rodrigo, M.~C. Jadud, {Identifying at-risk novice
+  programmers through the analysis of online protocols}, Philippine Computing
+  Society Congress.
+
+\bibitem{susan-sigce2005}
+S.~Bergin, R.~Reilly, Programming: factors that influence success, in:
+  Proceedings of the 36th Technical Symposium on Computer Science Education
+  (SIGCSE), 2005, pp. 411--415.
+
+\bibitem{watson-icalt-2013}
+C.~Watson, F.~W.~B. Li, J.~L. Godwin, Predicting performance in an introductory
+  programming course by logging and analyzing student programming behavior, in:
+  13th International Conference on Advanced Learning Technologies (ICALT),
+  2013, pp. 319--323.
+
+\bibitem{diane-acii-2011}
+D.~M.~C. Lee, M.~M.~T. Rodrigo, R.~S.~J. de~Baker, J.~O. Sugay, A.~Coronel,
+  Exploring the relationship between novice programmer confusion and
+  achievement, in: 4th International Conference Affective Computing and
+  Intelligent Interaction (ACII), 2011, pp. 175--184.
+
+\bibitem{marques-ia-2013}
+C.~M\'{a}rquez-Vera, A.~Cano, C.~Romero, S.~Ventura, Predicting student failure
+  at school using genetic programming and different data mining approaches with
+  high dimensional and imbalanced data, Applied Intelligence 38~(3) (2013)
+  315--330.
+
 \end{thebibliography}
