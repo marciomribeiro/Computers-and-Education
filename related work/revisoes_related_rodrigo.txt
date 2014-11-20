@@ -1,0 +1,59 @@
+[1] Predicting Performance in an Introductory Programming Course by Logging and Analyzing Student Programming Behavior 
+
+Programming behavior was directly logged by using an extension for the BlueJ IDE. Each time a student compiled their code on a university PC the extension would log a snapshot of their program source code along with the event type (success or fail), timestamp, error message reported and line number if applicable.
+
+45 students
+
+The approach predicts performance basedupon how a student responds to different types of compilation errorscompared to their peers
+
+The results showed that after 4 sessions, approximately 30 days, predictor accuracy is around 60%.
+
+When compared to this study, they use compilation logs, we evaluate problem solving skills; in 30 days, they achieved 60% of accuracy, we achieved 72%; they rely on a observing the behavior while students are developing the solution, we observe when they complete their solutions; 
+Although both approaches are targeting the same problem, they provide complementary solutions. Then, we believe the approaches could be combined to achieve results even better.
+
+
+===============================================
+
+[2] Identifying At-Risk Novice Java Programmers Through the Analysis of Online Protocols
+
+They have developed a metric that measures how many syntax errors a student encountered during a laboratory session.
+After the end of a semester, they correlated the metric with the midterm exam scores and arrived at a correlation value R = -0.54 with p-value < 0.001, implying that the lower metric, the higher the midterm exam score of the student. 
+However, there is no evaluation of how to use this metric as a predictor.
+The approach proposed in [1] is based on this work, and they showed that they achieved better results. Therefore, the arguments we used to compare our approach to [1] also applies when we compare to [2].
+
+===============================================
+[3] Exploring the Relationship Between Novice ProgrammerConfusion and Achievement
+
+
+The authors build a model that classifies whether a student is confused while programming or not. They collect data from compilation logs. They found that students that are consistently confused over the time achieve lower grades. They found a correlation of 0.229 (p=0.026).
+In order to build the model, they rely on a human expert to classify a set of compilation logs as “confused” or “not confused”. The classification is then used to build a decision tree. 
+
+When compared to this study, the authors did not correlate with success or failure rates. Then, the predictor was not evaluated. The results are only achieved by mid-semester, which may be too late to “recover” the student.
+
+
+===============================================
+[4] Affective and Behavioral Predictors of Novice Programmer Achievement
+
+This study uses a combination of human observation, midterm test scores, and logs of student interactions with the compiler within an IDE.
+They found that students who are confused, bored, or engaged in IDE-related on-task conversation will most probably do less well in the midterm exams. 
+
+However, this is study is hard to be replicated, once is mostly based on human behavior observation, and, therefore, is highly dependent on the observer.
+
+
+===============================================
+[5] A PREDICTOR FOR SUCCESS IN AN INTRODUCTORY PROGRAMMING CLASS BASED UPON ABSTRACT REASONING DEVELOPMENT
+
+This study is based on a test that should performed in controlled environment. It requires an instructor, students and around 40 minutes to complete.
+Based on the test, they classify students into 3 groups: late formal, early formal or late concrete. The final course grade could be A, B, C , D or F. 
+Then the results indicated that late formal showed a trend to high performance (73% received A or B). The people considered early formal received a smaller percentage of A or B within their group (54.6%). While only 34.4% of the people considered late concrete received an A or B, i.e., 65.6% received a C, D, or F in the course.
+
+When compared to our approach, it did not become clear how their predicts could be used to identify that students that will fail. Furthermore, it is not an automatic approach.
+
+
+
+===============================================
+[6] Interacting Factors that Predict Success and Failure in a CS1 Course
+In this work, authors have applied a test that considered factors such as student expectations of success, science background and math background. 
+They concluded that the desire of students to pick up the skills of programming was the strongest influence on passing the course.
+
+This approach is not automatic, and there looks for more patterns than just pass or fail. It is based on a decision tree, and the authors did not present a single measure of success or failure for the predictor.
