@@ -50,5 +50,6 @@ Threats:
 - Estudo totalmente realizado em 2014. Não usou propositalmente nenhuma tecnica (para o predictor).
 - Intuitivamente, o professor pode chamar atencao de algum aluno para que ele estude mais e nao perca.
 - Mas, isso nao proposital perante esse artigo.
+- Não havia intenção de escrever o artigo durante os semestres
 
 http://www.grammarbook.com/numbers/numbers.asp

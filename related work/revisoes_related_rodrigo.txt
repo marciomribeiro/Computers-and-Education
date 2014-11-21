@@ -1,12 +1,14 @@
 [1] Predicting Performance in an Introductory Programming Course by Logging and Analyzing Student Programming Behavior 
 
+\cite{watson-icalt-2013}
+
 Programming behavior was directly logged by using an extension for the BlueJ IDE. Each time a student compiled their code on a university PC the extension would log a snapshot of their program source code along with the event type (success or fail), timestamp, error message reported and line number if applicable.
 
 45 students
 
 The approach predicts performance basedupon how a student responds to different types of compilation errorscompared to their peers
 
-The results showed that after 4 sessions, approximately 30 days, predictor accuracy is around 60%.
+The results showed that after 4 sessions, approximately 45 days, predictor accuracy is around 60%.
 
 When compared to this study, they use compilation logs, we evaluate problem solving skills; in 30 days, they achieved 60% of accuracy, we achieved 72%; they rely on a observing the behavior while students are developing the solution, we observe when they complete their solutions; 
 Although both approaches are targeting the same problem, they provide complementary solutions. Then, we believe the approaches could be combined to achieve results even better.
@@ -16,6 +18,8 @@ Although both approaches are targeting the same problem, they provide complement
 
 [2] Identifying At-Risk Novice Java Programmers Through the Analysis of Online Protocols
 
+\cite{emily-up-2008}
+
 They have developed a metric that measures how many syntax errors a student encountered during a laboratory session.
 After the end of a semester, they correlated the metric with the midterm exam scores and arrived at a correlation value R = -0.54 with p-value < 0.001, implying that the lower metric, the higher the midterm exam score of the student. 
 However, there is no evaluation of how to use this metric as a predictor.
@@ -24,6 +28,7 @@ The approach proposed in [1] is based on this work, and they showed that they ac
 ===============================================
 [3] Exploring the Relationship Between Novice ProgrammerConfusion and Achievement
 
+\cite{diane-acii-2011}
 
 The authors build a model that classifies whether a student is confused while programming or not. They collect data from compilation logs. They found that students that are consistently confused over the time achieve lower grades. They found a correlation of 0.229 (p=0.026).
 In order to build the model, they rely on a human expert to classify a set of compilation logs as “confused” or “not confused”. The classification is then used to build a decision tree. 
@@ -33,6 +38,8 @@ When compared to this study, the authors did not correlate with success or failu
 
 ===============================================
 [4] Affective and Behavioral Predictors of Novice Programmer Achievement
+
+\cite{rodrigo-behavioral-ITiCSE2009}
 
 This study uses a combination of human observation, midterm test scores, and logs of student interactions with the compiler within an IDE.
 They found that students who are confused, bored, or engaged in IDE-related on-task conversation will most probably do less well in the midterm exams. 
@@ -52,7 +59,7 @@ When compared to our approach, it did not become clear how their predicts could 
 
 
 ===============================================
-[6] Interacting Factors that Predict Success and Failure in a CS1 Course
+[6] Interacting Factors that Predict Success and Failure in a CS1 Course\cite{nathan-2004}
 In this work, authors have applied a test that considered factors such as student expectations of success, science background and math background. 
 They concluded that the desire of students to pick up the skills of programming was the strongest influence on passing the course.
 
