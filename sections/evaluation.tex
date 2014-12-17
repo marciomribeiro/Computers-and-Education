@@ -2,7 +2,9 @@
 
 \label{sec:evaluation}
 
-To evaluate our strategy, in this section we present the empirical study we conduct. The objective of this study is to evaluate to what extent our strategy is capable of identifying potential failing students in only 30 days. To explain our evaluation design, we first present the general settings in Section~\ref{sec:participants}. Then, we detail the procedure we use during the evaluation in Section~\ref{sec:procedure}.
+To evaluate our strategy, in this section we present the empirical study we conduct. This study has the purpose of evaluating our strategy with respect to verify to what extent our strategy is capable of identifying potential failing students in only 30 days. To explain our evaluation design, we first present the general settings in Section~\ref{sec:participants}. Then, we detail the procedure we use during the evaluation in Section~\ref{sec:procedure}.
+
+%The objective of this study is 
 
 %Before explaining our study, we first introduce the terminology we use throughout this article. In particular, we define in what follows four categories: abort, skip, fail, and pass.
 %
@@ -33,7 +35,7 @@ The participants of our study are freshmen students of introductory programming 
 \centering
 \begin{tabular}{|c|c|}
 \hline
-\textbf{Course} & \textbf{Number of enrolled students}\\ \hline
+\textbf{Semester} & \textbf{Number of enrolled students}\\ \hline
 2010.02 & 32\\ \hline
 2011.01 & 38\\ \hline
 2011.02 & 35\\ \hline
@@ -43,11 +45,11 @@ The participants of our study are freshmen students of introductory programming 
 2013.02 & 31\\ \hline
 \textbf{TOTAL:} & \totalStudents\\ \hline
 \end{tabular}
-\caption{Participants per course.}
+\caption{Participants per semester.}
 \label{tab:participants}
 \end{table}
 
-The same professor (Paes, one of the authors) taught the 7 semesters. The classes happened in a lab and some exercises available in Huxley were solved during the class. The professor strongly encouraged all students to submit solutions for the problems available in Huxley during extra-class activities, once there is absolutely no penalty in case of wrong submitted solutions. However, during the first 30 days, the use of Huxley was mandatory for approximately 6 exercises (used as a small percentage of the final grade) and for the first formal exam (held closely to the 30th day).
+The same professor (Paes, one of the authors) taught the 7 semesters. The classes happened in a laboratory and the students solved some exercises available in Huxley during the classes. The professor strongly encouraged all students to submit solutions for the problems available in Huxley as extra-class activities, once there is absolutely no penalty in case of wrong submitted solutions. However, during the first 30 days, the use of Huxley was mandatory for approximately 6 exercises (used as a small percentage of the final grade) and for the first formal exam (held closely to the 30th day).
 
 The programming language was C and the program curriculum for the first 30 days (\semesterPercentage of the semester) was the following: \textit{introduction to algorithms; hello world in C; variables; identifiers; constants; basic structure of a C program; input/output; operators; data types; assignments; and conditional structures}.
 
@@ -63,18 +65,18 @@ The programming language was C and the program curriculum for the first 30 days 
 
 \label{sec:procedure}
 
-Figure~\ref{fig:procedure} illustrates how we perform our evaluation. The result of executing our strategy consists of groups of students according to the clustering algorithm. Now, according to the groups, we have the potential failing students (see the left-hand side in Figure~\ref{fig:procedure}). These students are the ones that have a small number of submissions and correct submissions (represented by circles). Notice we also have students that are potential candidates to successfully pass (represented by stars): due to the high number of submissions to Huxley after 30 days, they seem to be practicing programming really hard. We represent the inconclusive group by squares.
+Figure~\ref{fig:procedure} illustrates how we perform our evaluation. The result of executing our strategy consists of groups of students according to the clustering algorithm. To avoid discrepancies in absolute magnitudes of our two metrics, we normalize the data. This way, the metrics are between zero and one. In Figure~\ref{fig:procedure} we have three groups. We illustrate each group by using a different shape: circle, square, and star. We represent the students likely to fail by circles. These students are the ones that have a small number of submissions and correct submissions. The opposite occurs with students candidates to successfully pass (represented by stars): due to the high number of submissions and correct submissions after 30 days, they seem to practice programming really hard. Finally, we represent the inconclusive group by squares.
 
 \begin{figure}[htb]
 \centering
 \includegraphics[width=1.0\textwidth,natwidth=950,natheight=394]{images/Procedure.pdf}
-\caption{Checking the strategy results against the actual grades. ``After 30 days" represents the graphic label. The graphic is based on two dimensions, one for each metric we use.}
+\caption{To perform the evaluation we present in this article, we check the strategy results against the actual grades for the 7 semesters we consider. ``After 30 days - Semester 2012.02" represents the graphic label. The graphic has two dimensions (we normalize the data), one for each metric we use.}
 \label{fig:procedure}
 \end{figure}
 
-After applying the strategy, we now need to check whether it correctly predicts the failing students after 30 days. To do so, we use the academic system of the Federal University of Alagoas to look for grades and check whether the students failed or not. For example, for the detached circles, the strategy successfully identified that, after 30 days, two students would not pass and they indeed did not. Notice, however, that we may face false positives. Despite indicating the student \textit{John Smith}\footnote{All names we consider in this article are fictitious.} as a failing one after 30 days, such a student seemed to improve himself during the semester and he has been approved. In addition, we may also have false negatives. For instance, our strategy does not point the students \textit{Emma Wilson} and \textit{David Miller} as failing ones. Although \textit{Emma Wilson} seems to be one of the best students after 30 days, she failed the course. The several reasons why this happened is out of the scope of this article.
+To perform the evaluation, we apply the strategy and then check whether it correctly predicts the failing students after 30 days. To check, we use the academic system of the Federal University of Alagoas to look for grades and check whether the students failed or not. For example, for the detached circles, the strategy successfully identified that, after 30 days, two students would not pass and they indeed did not. Notice, however, that we may face false positives. Despite indicating the student \textit{John Smith}\footnote{All names we consider in this article are fictitious.} as a failing one after 30 days (represented by a circle), such a student seemed to improve himself during the semester and has been approved. In addition, we may also have false negatives. For instance, our strategy does not point the students \textit{Emma Wilson} and \textit{David Miller} as failing ones, but they failed. Notice that, although \textit{Emma Wilson} seems to be one of the best students after 30 days, she failed the course. The several reasons of why this happened is out of the scope of this article.
 
-To better structure and analyze our results and, at the same time, take false positives and false negatives into account, we consider the following two metrics: precision and recall. Precision is the fraction of retrieved students that are relevant, i.e., the students pointed by the strategy that indeed failed the course. We have a perfect precision, 1.0, when every student retrieved by the strategy is relevant (i.e., a failing student), which means we have no false positives. Precision focuses on \textit{quality} and \textit{accuracy}. However, the precision says nothing about whether \textit{all} relevant students were indeed retrieved.
+To better structure and analyze our results and, at the same time, take false positives and false negatives into account, we consider the following two metrics: precision and recall~\cite{data-mining}. Precision is the fraction of retrieved students that are relevant, i.e., the students pointed by the strategy that indeed failed the course. We have a perfect precision, 1.0, when every student retrieved by the strategy is relevant (i.e., a failing student), which means we have no false positives. Precision focuses on \textit{quality}. However, the precision says nothing about whether \textit{all} relevant students were indeed retrieved.
 
 \vspace{0.1cm}
 $$
@@ -82,7 +84,7 @@ Precision = \frac{| \{relevant\_students\} \cap \{retrieved\_students\} |}{| \{r
 $$
 \vspace{0.1cm}
 
-Recall, in its turn, is the fraction of relevant students that are retrieved, i.e., it is the probability of retrieving a failing student. A perfect recall, 1.0, means that we retrieve all failing students, which means we have no false negatives. In this context, recall focuses on \textit{completeness} and \textit{quantity}. Notice that recall says nothing about how many irrelevant students (students that will pass) the strategy retrieved.
+Recall, in its turn, is the fraction of relevant students that are retrieved, i.e., it is the probability of retrieving a failing student. A perfect recall, 1.0, means that we retrieve all failing students, which means we have no false negatives. In this context, recall focuses on \textit{completeness}. Notice that recall says nothing about how many irrelevant students (students that will pass) the strategy retrieved.
 
 \vspace{0.1cm}
 $$
@@ -121,13 +123,15 @@ In this section, we describe the results and test our hypotheses before discussi
 
 \subsection{Results}
 
-In our evaluation, we use data of 7 courses (3.5 years; 7 semesters) totalling \totalStudents students. We apply our strategy by setting k-means to compute two and three groups. We now proceed separately, reporting the results considering both cases.
+In our evaluation, we use data of 7 courses (3.5 years; 7 semesters) totalling \totalStudents students. To better understand the strengths and weaknesses of our strategy, we set k-means to compute two and three groups. We now proceed separately, reporting the results considering both cases: two groups in Section~\ref{sec:two-groups} and three groups in Section~\ref{sec:three-groups}.
 
 \subsubsection{Two groups}
 
-When considering two groups, we set the strategy to consider all students in two categories: fail or pass. Figure~\ref{fig:2-groups} illustrates the results for all courses. Notice that Figure~\ref{fig:2-2011-01} contains an outlier. In this particular case, the strategy pointed that all students but one would fail the course. Clearly this result is a consequence of such outlier. This way, the presence of one outlier might represent a problem when considering two groups.
+\label{sec:two-groups}
 
-\begin{figure*}[ht]
+When considering two groups, we set the strategy to consider all students in two categories: fail or pass. Figure~\ref{fig:2-groups} illustrates the results for all courses. Notice we normalize both metrics (see the axes between zero and one).
+
+\begin{figure*}[!ht]
      \begin{center}
          \subfigure[2010.02] {
              \includegraphics[scale=0.21,natwidth=480,natheight=480]{images/2-2010-02.png}
@@ -162,30 +166,32 @@ When considering two groups, we set the strategy to consider all students in two
 	 \label{fig:2-groups}
 \end{figure*}
 
-To better analyze our results, we remove this outlier and execute our strategy again. By using two groups and properly removing the outlier, we achieve the following results for precision and recall:
+By using two groups, we achieve the following results for precision and recall:
 
 \vspace{0.2cm}
 \noindent
 \begin{minipage}{.5\linewidth}
 \centering
 $$
-Precision = \frac{92}{145} = 63\%;
+Precision = \frac{90}{128} = 70\%;
 $$
 \end{minipage}
 \begin{minipage}{.5\linewidth}
 $$
-Recall = \frac{92}{115} = 80\%.
+Recall = \frac{90}{133} = 67\%.
 $$
 \end{minipage}
 \vspace{0.2cm}
 
-Here we observe a high recall, i.e., 80\%. This means we only miss 20\% of the failing students. We have few false negatives, but this result says nothing about how many false positives (irrelevant students) we retrieved. However, notice that this result (80\%) represents our particular sample. We now need to find the population proportion, enabling us to generalize our findings. To do so, we need to check for statistical significance by executing the proportion hypothesis test. In this context, the test reveals that the population recall is 73\% with a confidence level of 95\% (\textit{p-value} $= 0.045$). Regarding precision, our results show a sample precision of 63\%. To generalize, we again execute the test and find that the population precision would be 56\% (\textit{p-value} $= 0.035$).
+Here we observe a recall of 67\%. This means we miss 33\% of the failing students. We have one third of false negatives, but this result says nothing about how many false positives (irrelevant students) we retrieved. However, notice that this result (67\%) represents our particular sample. We now need to find the population proportion, enabling us to generalize our findings. To do so, we need to check for statistical significance by executing the proportion hypothesis test. In this context, the test reveals that the population recall is 60\% with a confidence level of 95\% (\textit{p-value} $= 0.035$). Regarding precision, our results show a sample precision of 70\%. To generalize, we again execute the test and find that the population precision would be 63\% (\textit{p-value} $= 0.043$).
 
 \subsubsection{Three groups}
 
-Analogously, we set our strategy to consider three groups. Here, besides the failing and passing groups, there is one extra group where the strategy cannot conclude anything about it. Figure~\ref{fig:3-groups} shows the results for three groups. Differently from two groups, here one outlier does not completely compromise the strategy.
+\label{sec:three-groups}
 
-\begin{figure*}[ht]
+Analogously, we set our strategy to consider three groups. Here, besides the failing and passing groups, there is one extra group where the strategy cannot conclude anything about it. Figure~\ref{fig:3-groups} shows the results for three groups. Again, notice we normalize the data.
+
+\begin{figure*}[!ht]
      \begin{center}
          \subfigure[2010.02] {
              \includegraphics[scale=0.21,natwidth=480,natheight=480]{images/3-2010-02.png}
@@ -227,19 +233,19 @@ We present the precision and recall for three groups in what follows:
 \begin{minipage}{.5\linewidth}
 \centering
 $$
-Precision = \frac{73}{91} = 80\%;
+Precision = \frac{79}{94} = 84\%;
 $$
 \end{minipage}
 \begin{minipage}{.5\linewidth}
 $$
-Recall = \frac{73}{115} = 63\%.
+Recall = \frac{79}{133} = 59\%.
 $$
 \end{minipage}
 \vspace{0.2cm}
 
-Now the strategy returns a precision of 80\% for the sample proportion. To generalize our results, we again execute the proportion hypothesis test. Regarding the population, our results reveal that the precision is 72\% with a confidence level of 95\%. In other words, from the set we retrieve,  we can identify with statistical significance (\textit{p-value} $= 0.04$) 72\% of the students that indeed will fail the course after 30 days. We repeat this process for recall and find 63\% for the sample and 55\% for the population, \textit{p-value} $= 0.033$.
+Now the strategy returns a precision of 84\% for the sample proportion. To generalize our results, we again execute the proportion hypothesis test. Regarding the population, our results reveal that the precision is 76\% with a confidence level of 95\%. In other words, from the set we retrieve,  we can identify with statistical significance (\textit{p-value} $= 0.033$) 76\% of the students that indeed will fail the course after 30 days. We repeat this process for recall and find 59\% for the sample and 52\% for the population, \textit{p-value} $= 0.043$.
 
-Notice that with three groups the results of precision and recall are inverted when compared to two groups. Our strategy uses k-means, which takes into account two metrics---number of submissions and number of correct submissions---and the number of groups. Both executions are totally independent and the algorithm is not aware of precision, recall, and the academic system. Therefore, we take these inverted results as a coincidence.
+%Notice that with three groups the results of precision and recall are inverted when compared to two groups. Our strategy uses k-means, which takes into account two metrics---number of submissions and number of correct submissions---and the number of groups. Both executions are totally independent and the algorithm is not aware of precision, recall, and the academic system. Therefore, we take these inverted results as a coincidence.
 
 \subsection{Discussion}
 
@@ -247,39 +253,51 @@ In this section we discuss the results. We first discuss the number of groups we
 
 \subsubsection{Two or Three Groups?}
 
-When applying our strategy considering two groups, the results indicate a higher recall when compared to three groups. This means that the strategy can identify the majority of the failing students (raising only few false negatives). Although this is an interesting result, the strategy with two groups yields many false positives. In fact, the precision is lower when compared to three groups, i.e., the set we retrieve contains many students that pass. In this situation, professors and mentors might waste effort trying to recover students that actually do not need recovering. On the other hand, with three groups we have a higher precision, which means professors should give special attention to the students the strategy retrieves, since 72\% of them tend to fail. Nevertheless, since the recall is lower than with two groups, we have more failing students not retrieved by the strategy for three groups.
+When applying our strategy considering two groups, the results indicate a higher recall when compared to three groups. This means that the strategy with two groups can identify the majority of the failing students (raising less false negatives). However, the strategy with two groups yields many false positives. In fact, the precision is lower when compared to three groups, i.e., the set we retrieve contains many students that pass. In this situation, professors and mentors might waste effort trying to recover students that actually do not need much recovering. On the other hand, with three groups we have a higher precision, which means professors should give special attention to the students the strategy retrieves, since 76\% of them tend to fail. Nevertheless, since the recall is lower than with two groups, we have more failing students not retrieved by the strategy for three groups.
 
 %we may have there are many failing students not retrieved by the strategy.
 
-In this context, setting the number of groups to execute our strategy seems to depend on the professors priorities and resources. In case the professor has available time and additional mentors to help her, she can probably use two groups, which consists of a more complete retrieved set (the recall is higher for two groups), even though it contains many false positives. However, notice that applying the strategy with two groups is more likely to outliers problems, such as the one we depict in Figure~\ref{fig:2-2011-01}.
+In this context, setting the number of groups to execute our strategy seems to depend on the professors priorities and resources. In case the professor has available time and additional mentors to help her, she can probably use two groups, consisting of a more complete retrieved set (the recall is higher for two groups), even though it contains many false positives.
 
 On the other hand, if the professor wants to avoid false positives because of no available time or few mentors to help, she might prefer to use three groups, despite being aware of potential failing students not retrieved by the strategy (many false negatives, lower recall than with two groups). 
 
-%better precision in exchange for 
+To better compare both groups, we also consider accuracy. Accuracy is the overall correctness: it is the proportion of corrected classified items, either as relevant or as irrelevant~\cite{evaluation-text}. We compute accuracy according to the following:
+
+\vspace{0.1cm}
+$$
+Accuracy = \frac{| \{true\_positives\} \cup \{true\_negatives\} |}{| \{all\_students\} |}
+$$
+\vspace{0.1cm}
+
+We achieve 66\% and 71\% for two and three groups, respectively. This way, when considering the overall correctness, three groups perform better.
 
 \subsubsection{Final Exams}
 
-Even though the strategy pointed students as potential failing ones in the first 30 days, some of them passed, raising false positives. Table~\ref{tab:final-exams} illustrates the precision for two and three groups as well as the false positives. For two and three groups, the precision is 56\% and 72\%, respectively. This way, we have 44\% and 28\% of false positives. As mentioned, the number of false positives is greater when considering two groups.
+%Even though the strategy pointed students as potential failing ones in the first 30 days, some of them passed, raising false positives. 
+
+
+
+Table~\ref{tab:final-exams} illustrates the sample precisions for two and three groups as well as the false positives. For two and three groups, the precision is 70\% and 84\%, respectively. This way, we have 30\% and 16\% of false positives. As mentioned, the number of false positives is greater when considering two groups.
 
 \begin{table}[h]
 \centering
 \begin{tabular}{|c|c|c|c|}
 \hline
 \textbf{Groups} & \textbf{Precision} & \textbf{False Positives} & \textbf{Final Exam}\\ \hline
-2 & 56\% & 44\% (53 students) & 35\% (19 out of 53 students)\\ \hline
-3 & 72\% & 28\% (18 students) & 33\% (06 out of 18 students)\\ \hline
+2 & 70\% & 30\% (38 students) & XX\% (XX out of 38 students)\\ \hline
+3 & 84\% & 16\% (15 students) & XX\% (XX out of 15 students)\\ \hline
 \end{tabular}
 \caption{False positives (students pointed as potential failing ones but passed) that performed the final exam.}
 \label{tab:final-exams}
 \end{table}
 
-To better understand these false positives, we now analyze their grades at the academic system. In our study, we find that some of these students did not pass in the first place. In fact, they needed to perform the final exam to pass. At the university we focus on this article, the final exam represents a second chance and is only available to students with not enough grades to pass.
+To better understand these false positives, we now analyze their grades at the academic system. In our study, we find that some of these students did not pass in the regular exams. In fact, they needed to perform the final exam to pass. At the university we focus on this article, the final exam represents a second chance and is only available to students with not enough grades to pass.
 
 This result is important in the sense that, although the strategy might raise false positives, it seems worth to follow these students as well. We find that at least 33\% of them need help (regardless of the number of groups, two or three), otherwise they reach the final exams. This way, professors and mentors can also give special attention to these students, which may improve their learning process, avoid final exams, and lead to better grades.
 
-\subsubsection{Back to our objective}
+%\subsubsection{Back to our objective}
 
-As mentioned, the objective of our study is ``to evaluate to what extent our strategy is capable of identifying potential failing students in only 30 days.'' Given the results we achieve, we believe our strategy is indeed capable of predicting the failing students early. In particular, from the group of students our strategy points as ``likely to fail,'' 72\% of the students indeed fail with 95\% standard confidence level by using three groups. 
+%As mentioned, the objective of our study is ``to evaluate to what extent our strategy is capable of identifying potential failing students in only 30 days.'' Given the results we achieve, we believe our strategy is indeed capable of predicting the failing students early. In particular, from the group of students our strategy points as ``likely to fail,'' 72\% of the students indeed fail with 95\% standard confidence level by using three groups.
 
 %Also, we notice that the 28\% remaining contains at least 33\% of students that somehow need help, since they reach the final exam.
 
@@ -291,7 +309,7 @@ As mentioned, the objective of our study is ``to evaluate to what extent our str
 
 The efficacy of our strategy can strongly depend on the number of enrolled students in the course. In this context, if the number of students is small (e.g., 10 students), the own professor can identify---also early---the students that need help. This scenario is even more promising when the professor counts on mentors to help. Therefore, here our strategy adds little and professors might not notice the benefits of using it.
 
-On the other hand, despite having courses throughout Brazil with few students, it is common to find courses with 30, 40, 50, or even 60 enrolled students. In USA, for instance, this number can be even larger at some universities. In this context, previous studies~\cite{bennedsen-sigcse-failure-rates-2007} considering 63 institutions report introductory programming courses with more than 600 students! The average class size is 116, but only 23\% of the courses have less than 30 students~\cite{bennedsen-sigcse-failure-rates-2007}. In addition, they found that small classes (with less than 30 students) perform better regarding pass rates than larger ones.
+On the other hand, despite having courses throughout Brazil with few students, it is common to find courses with 30 or even 100 enrolled students. In USA, for instance, this number can be even larger at some universities. In this context, previous studies~\cite{bennedsen-sigcse-failure-rates-2007} considering 63 institutions report introductory programming courses with more than 600 students! The average class size is 116, but only 23\% of the courses have less than 30 students~\cite{bennedsen-sigcse-failure-rates-2007}. In addition, they found that small classes (with less than 30 students) perform better regarding pass rates than larger ones.
 
 When considering larger classes, the task of predicting the potential failing students becomes more difficult, time consuming, and error prone. Therefore, an automatic approach like our strategy can better support professors and their mentors. Moreover, once professors identify such students earlier, they may have better chances of helping the students before it is too late. So, the application of our strategy can also contribute to the dropout rate reduction. Nevertheless, we need further studies to better support this claim.
 
@@ -317,7 +335,7 @@ Our strategy represents a feasible way to identify potential failing students ea
 %\begin{itemize}
 
 %	\item So uma prova, nao haveria muito feedback. Dia ruim?
-%	\item Varios minitestes, ha uma avaliação constante; a quantidade de dados e feedback e muito maior!
+%	\item Varios minitestes, ha uma avaliaÃ§Ã£o constante; a quantidade de dados e feedback e muito maior!
 
 %\end{itemize}
 
@@ -332,6 +350,18 @@ Our strategy represents a feasible way to identify potential failing students ea
 
 \subsection{Threats to validity}
 
-In this section we present the threats to validity of our study. Although our sample is reasonably big (227 students), our study has homogeneities that might pose threats. For example, the same professor for all the 7 courses (at the same university) and the same language used (C language) threats external validity. In this way, it is difficult to extrapolate the results to other contexts. Nevertheless, our strategy uses metrics to identify potential failing students. In this context, we argue that the metrics we use (submissions and correct submissions) do not necessarily depend on factors such as the professors and even less on the adopted languages. However, our claim is not enough and we need further studies to better generalize our conclusions.
+In this section we present the threats to validity of our study. We follow the convention presented in Wohlin et. al.~\cite{claes-experimentation-se}.
+
+Although our sample has 227 students, our study has homogeneities that might pose threats. For example, the same professor for all the 7 courses (at the same university) and the same language used (C language) threat external validity. In this way, it is difficult to extrapolate the results to other contexts. Nevertheless, our strategy uses metrics to identify potential failing students. In this context, we argue that the metrics we use (submissions and correct submissions) do not necessarily depend on factors such as the professors and even less on the adopted languages. However, our claim is not enough and we need further studies to better generalize our conclusions.
 
 The use of Huxley threats internal validity. Students must know how to use the system to submit their solutions. If the students somehow do not get used to the system, they might feel frustrated, hindering their learning and, consequently, biasing our results. We minimize this threat by introducing Huxley in the very first classes as well as by using mentors to help the students on how to use Huxley.
+
+The use of k-means threats conclusion validity. To compute the clusters, k-means firstly place points (centroids) at random locations. Consequently, two points---here two students---might appear at different groups in two different executions of the algorithm. This way, the results we present for precision, recall, and accuracy might be different when executing the strategy again. However, in our experience, we report only slight differences. Another threat concerns outliers. Suppose we execute the strategy with two groups. In case we have an outstanding student (both metrics of such a student are very higher when compared to all other students), our strategy might conclude that she will pass and everyone else will fail, making our strategy negatively susceptible to outliers. Nevertheless, we did not face this problem in our findings.
+
+%We also report that k-means 
+
+%Notice that Figure~\ref{fig:2-2011-01} contains an outlier. In this particular case, the strategy pointed that all students but one would fail the course. Clearly this result is a consequence of such outlier. This way, the presence of one outlier might represent a problem when considering two groups.
+
+%Differently from two groups, here one outlier does not completely compromise the strategy.
+
+%However, notice that applying the strategy with two groups is more likely to outliers problems, such as the one we depict in Figure~\ref{fig:2-2011-01}.

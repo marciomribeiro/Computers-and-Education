@@ -1,57 +1,109 @@
-> source('~/Dropbox/Meus Artigos/2014/Computers and Education/util/precision-recall.R')
-[1] "Precision success = 92"
-[1] "Precision set = 145"
+===========================================================
+2 Groups
+===========================================================
+[1] "Printing confusing matrix for the 1 course"
+     [,1] [,2]
+[1,]    8   16
+[2,]    0   11
+[1] "Printing confusing matrix for the 22 course"
+     [,1] [,2]
+[1,]   12    3
+[2,]    1   23
+[1] "Printing confusing matrix for the 28 course"
+     [,1] [,2]
+[1,]    8    1
+[2,]   17   11
+[1] "Printing confusing matrix for the 38 course"
+     [,1] [,2]
+[1,]    6   12
+[2,]    7   11
+[1] "Printing confusing matrix for the 58 course"
+     [,1] [,2]
+[1,]   10    5
+[2,]    2   12
+[1] "Printing confusing matrix for the 67 course"
+     [,1] [,2]
+[1,]   10    6
+[2,]    5    9
+[1] "Printing confusing matrix for the 80 course"
+     [,1] [,2]
+[1,]   14    0
+[2,]    6   13
+[1] "Accumulated Confusing Matrix:"
+     [,1] [,2]
+[1,]   68   43
+[2,]   38   90
+[1] "Accumulated Precision:"
+[1] 0.703125
+[1] "Accumulated Recall:"
+[1] 0.6766917
+[1] "Accuracy:"
+[1] 0.6610879
+
+===========================================================
+3 Groups
+===========================================================
+[1] "Printing confusing matrix for the 1 course"
+     [,1] [,2]
+[1,]    8   19
+[2,]    0    8
+[1] "Printing confusing matrix for the 22 course"
+     [,1] [,2]
+[1,]   12    3
+[2,]    1   23
+[1] "Printing confusing matrix for the 28 course"
+     [,1] [,2]
+[1,]   24    5
+[2,]    1    7
+[1] "Printing confusing matrix for the 38 course"
+     [,1] [,2]
+[1,]   11   15
+[2,]    2    8
+[1] "Printing confusing matrix for the 58 course"
+     [,1] [,2]
+[1,]   10    5
+[2,]    2   12
+[1] "Printing confusing matrix for the 67 course"
+     [,1] [,2]
+[1,]   11    6
+[2,]    4    9
+[1] "Printing confusing matrix for the 80 course"
+     [,1] [,2]
+[1,]   15    1
+[2,]    5   12
+[1] "Accumulated Confusing Matrix:"
+     [,1] [,2]
+[1,]   91   54
+[2,]   15   79
+[1] "Accumulated Precision:"
+[1] 0.8404255
+[1] "Accumulated Recall:"
+[1] 0.593985
+[1] "Accuracy:"
+[1] 0.7112971
+
+[1] "Hypothesis test for precision. Population = 76%"
 
 	1-sample proportions test without continuity correction
 
-data:  precision_success out of precision_trials, null probability precision_h1
-X-squared = 5.26, df = 1, p-value = 0.9891
-alternative hypothesis: true p is greater than 0.72
+data:  precisionSuccess out of precisionTrials, null probability precisionH1
+X-squared = 3.3334, df = 1, p-value = 0.03394
+alternative hypothesis: true p is greater than 0.76
 95 percent confidence interval:
- 0.5667961 1.0000000
+ 0.7689116 1.0000000
 sample estimates:
         p 
-0.6344828 
+0.8404255 
 
-[1] "Recall success = 92"
-[1] "Recall set = 115"
-
-	1-sample proportions test without continuity correction
-
-data:  recall_success out of recall_trials, null probability recall_h1
-X-squared = 3.6508, df = 1, p-value = 0.02802
-alternative hypothesis: true p is greater than 0.72
-95 percent confidence interval:
- 0.7320694 1.0000000
-sample estimates:
-  p 
-0.8 
-===================================================================
-> source('~/Dropbox/Meus Artigos/2014/Computers and Education/util/precision-recall.R')
-[1] "Precision success = 73"
-[1] "Precision set = 91"
+[1] "Hypothesis test for recall. Population = 52%"
 
 	1-sample proportions test without continuity correction
 
-data:  precision_success out of precision_trials, null probability precision_h1
-X-squared = 3.0498, df = 1, p-value = 0.04037
-alternative hypothesis: true p is greater than 0.72
+data:  recallSuccess out of recallTrials, null probability recallH1
+X-squared = 2.9167, df = 1, p-value = 0.04383
+alternative hypothesis: true p is greater than 0.52
 95 percent confidence interval:
- 0.7252261 1.0000000
+ 0.5227453 1.0000000
 sample estimates:
-        p 
-0.8021978 
-
-[1] "Recall success = 73"
-[1] "Recall set = 115"
-
-	1-sample proportions test without continuity correction
-
-data:  recall_success out of recall_trials, null probability recall_h1
-X-squared = 4.1425, df = 1, p-value = 0.9791
-alternative hypothesis: true p is greater than 0.72
-95 percent confidence interval:
- 0.5586198 1.0000000
-sample estimates:
-        p 
-0.6347826
+       p 
+0.593985 
